@@ -1,4 +1,12 @@
 @import 'zerostyle';
+@import 'vars';
+
+.center {
+    /*центрирование, нужно для планшета*/
+    /* padding-left: calc(50% - 800px); 1600/2, 1600px - ширина сетки */
+    /* padding-right: calc(50% - 800px); */
+    margin: 0 auto;
+}
 
 .wrapper {
     max-width: 1440px;
@@ -18,6 +26,14 @@
             padding-right: 150px;
             justify-content: flex-end;
         }
+
+        &_item {
+            color: rgb(39, 85, 83);
+            font-family: $Lato;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+        }
     }
 
     &__block {
@@ -25,7 +41,54 @@
         justify-content: space-between;
     }
 
+    &__text {
+        max-width: 900px;
+        padding-left: 96px;
+        
+        &_quote {
+            color: rgb(255, 255, 255);
+            font-family: $Montserrat;
+            font-size: 64px;
+            font-weight: 900;
+            line-height: 64px;
+            text-align: left;
+        }
+
+        &_quote-auther {
+            color: rgb(255, 255, 255);
+            font-family: $Montserrat;
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 64px;
+            text-align: right;
+            margin-bottom: 135px;
+        }
+
+        &_sentence {
+            max-width: 385px;
+            color: rgb(255, 255, 255);
+            font-family: $Lato;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+            margin-bottom: 256px;
+        }
+    }
+
     &__list {
         padding-right: 50px;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &_item {
+            color: rgb(255, 255, 255);
+            font-family: $Lato;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+        }
     }
 }
