@@ -2,4 +2,38 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1440px;
+}
+
+.main {
+  width: 100%;
+  background: url(../images/main.svg) no-repeat;
+}
+.main__navigation {
+  padding-top: 45px;
+  padding-bottom: 55px;
+}
+.main__navigation_list {
+  display: flex;
+  gap: 50px;
+  padding-right: 150px;
+  justify-content: flex-end;
+}
+.main__block {
+  display: flex;
+  justify-content: space-between;
+}
+.main__list {
+  padding-right: 50px;
 }/*# sourceMappingURL=style.css.map */

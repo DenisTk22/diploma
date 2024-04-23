@@ -1,1 +1,31 @@
 @import 'zerostyle';
+
+.wrapper {
+    max-width: 1440px;
+}
+
+.main {
+    width: 100%;
+    background: url(../images/main.svg) no-repeat;
+
+    &__navigation {
+        padding-top: 45px;
+        padding-bottom: 55px;
+        
+        &_list {
+            display: flex;
+            gap: 50px;
+            padding-right: 150px;
+            justify-content: flex-end;
+        }
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        padding-right: 50px;
+    }
+}
