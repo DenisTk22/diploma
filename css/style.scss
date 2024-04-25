@@ -28,6 +28,7 @@
     margin-right: 50px;
 }
 
+//Главная страница
 .main {
     position: relative;
     width: 100%;
@@ -60,7 +61,7 @@
 
     &__text {
         max-width: 900px;
-        padding-left: 96px;
+        padding-left: $MainPaddingLeft;
         
         &_quote {
             color: rgb(255, 255, 255);
@@ -107,5 +108,123 @@
             font-weight: 500;
             line-height: 24px;
         }
+    }
+}
+
+//Страница Обо мне (about)
+.about {
+    padding-top: $MainPaddingTop;
+    padding-left: $MainPaddingLeft;
+
+    &__title {
+        width: 75%;
+        color: rgb(18, 18, 18);
+        font-family: $Inter;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 56px;
+        text-align: left;
+        letter-spacing: 1px;
+        margin-bottom: 83px;
+    }
+
+    &__preview {
+        width: 75%;
+        color: rgb(49, 49, 49);
+        font-family: $Lato;
+        letter-spacing: 1px;
+        // font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        margin-bottom: 35px;
+    }
+
+    &__text {
+        width: 75%;
+        color: rgb(49, 49, 49);
+        font-family: $Lato;
+        letter-spacing: 1px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+    }
+}
+
+//Страница Мативация (motivation)
+.motivation {
+    padding-top: $MainPaddingTop;
+    padding-left: $MainPaddingLeft;
+
+
+    &__title {
+        width: 90%;
+        color: rgb(33, 27, 27);
+        font-family: $Montserrat;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 1px;
+        text-align: left;
+        margin-bottom: 83px;
+    }
+
+    &__subtitle {
+        width: 90%;
+        color: rgb(49, 49, 49);
+        font-family: $Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 1px;
+        text-align: left;
+        margin-bottom: 35px;
+    }
+
+    &__point {
+        width: 90%;
+        margin-bottom: 32px;
+        color: rgb(49, 49, 49);
+        font-family: $Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 1px;
+        text-align: left;
+
+        &_bold {
+            font-weight: 700;
+        }
+    }
+}
+
+//Страница Путешествия на Алтай
+.altai {
+    padding-top: $TravelPaddingTop;
+    padding-left: $MainPaddingLeft;
+
+    &__title {
+        width: 50%;
+        margin-bottom: 83px;
+        color: rgb(33, 33, 33);
+        font-family: $Montserrat;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+
+    &__text {
+        width: 50%;
+        margin-bottom: 32px;
+        color: rgb(49, 49, 49);
+        font-family: $Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 1px;
+        text-align: left;
     }
 }

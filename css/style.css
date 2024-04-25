@@ -108,4 +108,108 @@ a {
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
+}
+
+.about {
+  padding-top: 120px;
+  padding-left: 96px;
+}
+.about__title {
+  width: 75%;
+  color: rgb(18, 18, 18);
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-bottom: 83px;
+}
+.about__preview {
+  width: 75%;
+  color: rgb(49, 49, 49);
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  margin-bottom: 35px;
+}
+.about__text {
+  width: 75%;
+  color: rgb(49, 49, 49);
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.motivation {
+  padding-top: 120px;
+  padding-left: 96px;
+}
+.motivation__title {
+  width: 90%;
+  color: rgb(33, 27, 27);
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-bottom: 83px;
+}
+.motivation__subtitle {
+  width: 90%;
+  color: rgb(49, 49, 49);
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-bottom: 35px;
+}
+.motivation__point {
+  width: 90%;
+  margin-bottom: 32px;
+  color: rgb(49, 49, 49);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.motivation__point_bold {
+  font-weight: 700;
+}
+
+.altai {
+  padding-top: 80px;
+  padding-left: 96px;
+}
+.altai__title {
+  width: 50%;
+  margin-bottom: 83px;
+  color: rgb(33, 33, 33);
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.altai__text {
+  width: 50%;
+  margin-bottom: 32px;
+  color: rgb(49, 49, 49);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
