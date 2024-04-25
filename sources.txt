@@ -1,0 +1,7 @@
+*Google fonts
+https://fonts.google.com/?query=inter
+https://fonts.google.com/?query=Montserrat
+https://fonts.google.com/?query=lato
+
+*Bootstrap
+https://getbootstrap.com/docs/5.0/components/carousel/#with-captions
