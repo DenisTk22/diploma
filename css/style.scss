@@ -23,21 +23,29 @@
     position: absolute;
     right: 0;
     bottom: 65px;
-
-    width: 500px;
+    width: 400px;
     margin-right: 50px;
+}
+
+.carousel-indicators {
+    margin-bottom: 0.5rem; //переопределение свойства
+}
+
+.carousel-caption {
+    padding-bottom: 0.25rem; //переопределение свойства
+    bottom: 0.25rem; //переопределение свойства
 }
 
 //Главная страница
 .main {
     position: relative;
     width: 100%;
-    background: url(../images/main.svg) no-repeat;
+    background: url(../images/myMain.JPG) no-repeat;
 
     &__navigation {
         padding-top: 45px;
         padding-bottom: 55px;
-        
+
         &_list {
             display: flex;
             gap: 50px;
@@ -51,6 +59,11 @@
             font-size: 16px;
             font-weight: 400;
             line-height: 19px;
+            padding: 5px;
+        }
+
+        &_item:hover {
+            color: rgb(89, 187, 182);
         }
     }
 
@@ -62,9 +75,9 @@
     &__text {
         max-width: 900px;
         padding-left: $MainPaddingLeft;
-        
+
         &_quote {
-            color: rgb(255, 255, 255);
+            color: rgb(9, 129, 123);
             font-family: $Montserrat;
             font-size: 64px;
             font-weight: 900;
@@ -73,7 +86,7 @@
         }
 
         &_quote-auther {
-            color: rgb(255, 255, 255);
+            color: rgb(39, 85, 83);
             font-family: $Montserrat;
             font-size: 48px;
             font-weight: 900;
@@ -102,22 +115,35 @@
         gap: 10px;
 
         &_item {
-            color: rgb(255, 255, 255);
+            color: rgb(39, 85, 83);
             font-family: $Lato;
             font-size: 18px;
             font-weight: 500;
             line-height: 24px;
+
+            &_hover {
+                padding: 5px;
+            }
+            &_hover:hover {
+                color: rgb(89, 187, 182);
+            }
         }
     }
 }
 
 //Страница Обо мне (about)
 .about {
-    padding-top: $MainPaddingTop;
-    padding-left: $MainPaddingLeft;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    background: rgb(241, 241, 241);
 
+    &__info {
+        padding-top: $MainPaddingTop;
+        padding-left: $MainPaddingLeft;
+    }
+    
     &__title {
-        width: 75%;
         color: rgb(18, 18, 18);
         font-family: $Inter;
         font-size: 48px;
@@ -129,11 +155,9 @@
     }
 
     &__preview {
-        width: 75%;
         color: rgb(49, 49, 49);
         font-family: $Lato;
         letter-spacing: 1px;
-        // font-size: 24px;
         font-weight: 400;
         line-height: 32px;
         text-align: left;
@@ -141,7 +165,6 @@
     }
 
     &__text {
-        width: 75%;
         color: rgb(49, 49, 49);
         font-family: $Lato;
         letter-spacing: 1px;
@@ -201,7 +224,7 @@
 
 //Страница Путешествия на Алтай
 .altai {
-    padding-top: $TravelPaddingTop;
+    padding-top: $MainPaddingTop;
     padding-left: $MainPaddingLeft;
 
     &__title {
