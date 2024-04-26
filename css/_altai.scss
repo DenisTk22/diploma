@@ -1,7 +1,13 @@
 //Страница Путешествия на Алтай
 .altai {
     padding-top: $MainPaddingTop;
-    padding-left: $MainPaddingLeft;
+    // padding-left: $MainPaddingLeft;
+    
+
+    &__main {
+        background: url(../images/altai.jpg) no-repeat;
+        height: 833px;
+    }
 
     &__title {
         width: 50%;
@@ -18,7 +24,7 @@
     &__text {
         width: 50%;
         margin-bottom: 32px;
-        color: rgb(49, 49, 49);
+        color: rgb(194, 183, 183);
         font-family: $Montserrat;
         font-size: 16px;
         font-weight: 400;
@@ -44,9 +50,10 @@
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 1px;
+        text-align: center;
     
         &_photo {
-            width: 300px;
+            width: 250px;
         }
     }
 

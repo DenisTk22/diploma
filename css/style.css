@@ -15,7 +15,10 @@ a {
 
 .altai {
   padding-top: 80px;
-  padding-left: 96px;
+}
+.altai__main {
+  background: url(../images/altai.jpg) no-repeat;
+  height: 833px;
 }
 .altai__title {
   width: 50%;
@@ -31,7 +34,7 @@ a {
 .altai__text {
   width: 50%;
   margin-bottom: 32px;
-  color: rgb(49, 49, 49);
+  color: rgb(194, 183, 183);
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -54,9 +57,10 @@ a {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 1px;
+  text-align: center;
 }
 .altai__horseTravel-day_photo {
-  width: 300px;
+  width: 250px;
 }
 
 .center {

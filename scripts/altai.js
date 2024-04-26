@@ -3,65 +3,65 @@ const travelingDays =  `[
     {
         "id": "1",
         "DayNumber": "1",
-        "Photo": "./images/pumpkin.jpg",
-        "Location": "LocationName1",
-        "ShortDescription": "lorem10",
+        "Photo": "./images/1suguina.JPG",
+        "Location": "урочище Сугойна",
+        "ShortDescription": "Отпарвная точка, тут мы пересели на лошадей.",
         "Description": "lorem50"
     },
     {
         "id": "2",
         "DayNumber": "2",
-        "Photo": "./images/pumpkin.jpg",
-        "Location": "LocationName2",
-        "ShortDescription": "lorem10",
+        "Photo": "./images/2muehta.JPG",
+        "Location": "урочище Муехта",
+        "ShortDescription": "Живописные места, море зелени и вековые деревья.",
         "Description": "lorem50"
     },
     {
         "id": "3",
         "DayNumber": "3",
-        "Photo": "./images/pumpkin.jpg",
-        "Location": "LocationName3",
-        "ShortDescription": "lorem10",
+        "Photo": "./images/3waterfall.JPG",
+        "Location": "Водопад",
+        "ShortDescription": "Потрязающий водопад с ледяной водой и крутым спуском.",
         "Description": "lorem50"
     },
     {
         "id": "4",
         "DayNumber": "4",
-        "Photo": "./images/pumpkin.jpg",
-        "Location": "LocationName4",
-        "ShortDescription": "lorem10",
+        "Photo": "./images/4baioukskiy.JPG",
+        "Location": "Байоюкский перевал",
+        "ShortDescription": "Ради такой красоты стоит преодолеть тысячи километров.",
         "Description": "lorem50"
     },
     {
         "id": "5",
         "DayNumber": "5",
-        "Photo": "./images/pumpkin.jpg",
-        "Location": "LocationName5",
-        "ShortDescription": "lorem10",
+        "Photo": "./images/5veronica.JPG",
+        "Location": "озеро Вероника",
+        "ShortDescription": "Существует легенда..., ну сами все узнаете, когда там побываете.",
         "Description": "lorem50"
     },
     {
         "id": "6",
         "DayNumber": "6",
-        "Photo": "./images/pumpkin.jpg",
-        "Location": "LocationName6",
-        "ShortDescription": "lorem10",
+        "Photo": "./images/6karakolskie.png",
+        "Location": "Каракольские озера",
+        "ShortDescription": "До озер мы так и не дошли, т.к. был сильный туман в тот день.",
         "Description": "lorem50"
     },
     {
         "id": "7",
         "DayNumber": "7",
-        "Photo": "./images/pumpkin.jpg",
-        "Location": "LocationName7",
-        "ShortDescription": "lorem10",
+        "Photo": "./images/7kedrovaya.JPG",
+        "Location": "Кедровая поляна",
+        "ShortDescription": "Тут мы ночевали несколько ночей, на радость наших четвероногих друзей и нашу тоже.",
         "Description": "lorem50"
     },
     {
         "id": "8",
         "DayNumber": "8",
-        "Photo": "./images/pumpkin.jpg",
-        "Location": "LocationName8",
-        "ShortDescription": "lorem10",
+        "Photo": "./images/8taezhnik.jpg",
+        "Location": "эко-отель Таёжник",
+        "ShortDescription": "Возвращение на базу, на берегу потрясающей реки Катунь.",
         "Description": "lorem50"
     }
 ]`
