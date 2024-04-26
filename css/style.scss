@@ -1,5 +1,6 @@
 @import 'zerostyle';
 @import 'vars';
+@import 'altai';
 
 .center {
     /*центрирование, нужно для планшета*/
@@ -9,8 +10,8 @@
 }
 
 .container {
-    width: 100vw;
-    background: url(../images/myMain.JPG) no-repeat cover;
+    width: 100%;
+    // background: url(../images/myMain.JPG) no-repeat cover;
 }
 
 .content {
@@ -45,7 +46,7 @@
 .main {
     position: relative;
     width: 100%;
-    // background: url(../images/myMain.JPG) no-repeat;
+    background: url(../images/myMain.JPG) no-repeat;
 
     &__navigation {
         padding-top: 45px;
@@ -224,35 +225,5 @@
         &_bold {
             font-weight: 700;
         }
-    }
-}
-
-//Страница Путешествия на Алтай
-.altai {
-    padding-top: $MainPaddingTop;
-    padding-left: $MainPaddingLeft;
-
-    &__title {
-        width: 50%;
-        margin-bottom: 83px;
-        color: rgb(33, 33, 33);
-        font-family: $Montserrat;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 50px;
-        letter-spacing: 1px;
-        text-align: left;
-    }
-
-    &__text {
-        width: 50%;
-        margin-bottom: 32px;
-        color: rgb(49, 49, 49);
-        font-family: $Montserrat;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 1px;
-        text-align: left;
     }
 }
