@@ -1,5 +1,54 @@
+//Путешествия на Алтае
+const altaiTravels = `[
+    {
+        "id": "1",
+        "TravelName": "Конный поход",
+        "Photo": "./images/1suguina.JPG",
+        "ShortDescription": "Набрались массу впечатлений!."
+    },
+    {
+        "id": "2",
+        "TravelName": "Сплав на рафтах",
+        "Photo": "./images/8taezhnik.jpg",
+        "ShortDescription": "Катунь - быстрая и холодная река Алтая."
+    }
+]`
+
+const altaiTravelsData = JSON.parse(altaiTravels);
+
+altaiTravelsData.forEach(travel => {
+
+    const altaiMyTravelsEl = document.querySelector('.altai__my-travels');
+
+        const travelEl = document.createElement('div');
+        travelEl.classList.add('altai__travel');
+        altaiMyTravelsEl.append(travelEl);
+
+        const travelNameEl = document.createElement('p');
+        travelNameEl.classList.add('altai__travel_name');
+        travelNameEl.textContent = `${travel.TravelName}`;
+        travelEl.append(travelNameEl);
+
+        const travelLinkEl = document.createElement('a');
+        travelLinkEl.classList.add('altai__travel_link');
+        travelLinkEl.href = '#';
+        travelEl.append(travelLinkEl);
+
+            const travelPhotoEl = document.createElement('img');
+            travelPhotoEl.classList.add('altai__travel_photo');
+            travelPhotoEl.src = travel.Photo;
+            travelPhotoEl.setAttribute('alt', `${travel.TravelName}`);
+            travelLinkEl.append(travelPhotoEl);
+
+        const shortDescriptionEl = document.createElement('p');
+        shortDescriptionEl.classList.add('altai__travel_shortDescription');
+        shortDescriptionEl.textContent = travel.ShortDescription;
+        travelEl.append(shortDescriptionEl);
+});
+
+
 // Дни конного похода
-const travelingDays =  `[
+const horseTravel =  `[
     {
         "id": "1",
         "DayNumber": "1",
@@ -65,9 +114,9 @@ const travelingDays =  `[
         "Description": "lorem50"
     }
 ]`
-const days = JSON.parse(travelingDays);
+const horseTravelDays = JSON.parse(horseTravel);
 
-days.forEach(day => {
+horseTravelDays.forEach(day => {
 
     const daysEl = document.querySelector('.altai__horseTravel-days');
 
