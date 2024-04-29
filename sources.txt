@@ -5,3 +5,12 @@ https://fonts.google.com/?query=lato
 
 *Bootstrap
 https://getbootstrap.com/docs/5.0/components/carousel/#with-captions
+
+*Справочники
+https://htmlbook.ru/
+https://html5book.ru/
+https://developer.mozilla.org/ru/docs/Web/HTML
+https://developer.mozilla.org/ru/docs/Web/CSS
+https://developer.mozilla.org/ru/docs/Web/JavaScript
+https://developer.mozilla.org/ru/docs/Web/API/Element
+https://developer.mozilla.org/ru/docs/Web/API/Document_Object_Model

@@ -4,12 +4,14 @@ const altaiTravels = `[
         "id": "1",
         "TravelName": "Конный поход",
         "Photo": "./images/1suguina.JPG",
+        "Link": "#altai__horseTravel",
         "ShortDescription": "Набрались массу впечатлений!."
     },
     {
         "id": "2",
         "TravelName": "Сплав на рафтах",
         "Photo": "./images/8taezhnik.jpg",
+        "Link": "#altai__raftingKatun",
         "ShortDescription": "Катунь - быстрая и холодная река Алтая."
     }
 ]`
@@ -31,7 +33,7 @@ altaiTravelsData.forEach(travel => {
 
         const travelLinkEl = document.createElement('a');
         travelLinkEl.classList.add('altai__travel_link');
-        travelLinkEl.href = '#';
+        travelLinkEl.href = `${travel.Link}`;
         travelEl.append(travelLinkEl);
 
             const travelPhotoEl = document.createElement('img');

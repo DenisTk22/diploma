@@ -31,6 +31,8 @@
     bottom: 65px;
     width: 400px;
     margin-right: 50px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .carousel-indicators {
@@ -39,7 +41,7 @@
 
 .carousel-caption {
     padding-bottom: 0.25rem; //переопределение свойства
-    bottom: 0.25rem; //переопределение свойства
+    bottom: 1.25rem; //переопределение свойства
 }
 
 //Главная страница
@@ -60,7 +62,7 @@
         }
 
         &_item {
-            color: rgb(39, 85, 83);
+            color: $linkColor;
             font-family: $Lato;
             font-size: 16px;
             font-weight: 400;
@@ -69,7 +71,7 @@
         }
 
         &_item:hover {
-            color: rgb(89, 187, 182);
+            color: $linkColorHover;
         }
     }
 
@@ -121,7 +123,7 @@
         gap: 10px;
 
         &_item {
-            color: rgb(39, 85, 83);
+            color: $linkColor;
             font-family: $Lato;
             font-size: 18px;
             font-weight: 500;
@@ -131,7 +133,7 @@
                 padding: 5px;
             }
             &_hover:hover {
-                color: rgb(89, 187, 182);
+                color: $linkColorHover;
             }
         }
     }
@@ -142,7 +144,7 @@
     width: 100%;
     display: flex;
     gap: 10px;
-    background: rgb(241, 241, 241);
+    background: $backgroundMain;
 
     &__info {
         padding-top: $MainPaddingTop;
