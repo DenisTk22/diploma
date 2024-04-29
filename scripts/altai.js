@@ -46,10 +46,11 @@ altaiTravelsData.forEach(travel => {
         shortDescriptionEl.classList.add('altai__travel_shortDescription');
         shortDescriptionEl.textContent = travel.ShortDescription;
         travelEl.append(shortDescriptionEl);
+
 });
 
 
-// Дни конного похода
+// Дни конного похода, horseTravel
 const horseTravel =  `[
     {
         "id": "1",
@@ -126,25 +127,75 @@ horseTravelDays.forEach(day => {
     dayEl.classList.add('altai__horseTravel-day');
     daysEl.append(dayEl);
 
-    const dayNumberEl = document.createElement('p');
-    dayNumberEl.classList.add('altai__horseTravel-day_number');
-    dayNumberEl.textContent = `День ${day.DayNumber}`;
-    dayEl.append(dayNumberEl);
+        const dayNumberEl = document.createElement('p');
+        dayNumberEl.classList.add('altai__horseTravel-day_number');
+        dayNumberEl.textContent = `День ${day.DayNumber}`;
+        dayEl.append(dayNumberEl);
 
-    const dayPhotoEl = document.createElement('img');
-    dayPhotoEl.classList.add('altai__horseTravel-day_photo');
-    dayPhotoEl.src = day.Photo;
-    dayPhotoEl.setAttribute('alt', `photo-day${day.DayNumber}`);
-    dayEl.append(dayPhotoEl);
+        const dayPhotoEl = document.createElement('img');
+        dayPhotoEl.classList.add('altai__horseTravel-day_photo');
+        dayPhotoEl.src = day.Photo;
+        dayPhotoEl.setAttribute('alt', `photo-day${day.DayNumber}`);
+        dayEl.append(dayPhotoEl);
 
-    const locationEl = document.createElement('p');
-    locationEl.classList.add('altai__horseTravel-day_location');
-    locationEl.textContent = day.Location;
-    dayEl.append(locationEl);
+        const locationEl = document.createElement('p');
+        locationEl.classList.add('altai__horseTravel-day_location');
+        locationEl.textContent = day.Location;
+        dayEl.append(locationEl);
 
-    const shortDescriptionEl = document.createElement('p');
-    shortDescriptionEl.classList.add('altai__horseTravel-day_shortDescription');
-    shortDescriptionEl.textContent = day.ShortDescription;
-    dayEl.append(shortDescriptionEl);
+        const shortDescriptionEl = document.createElement('p');
+        shortDescriptionEl.classList.add('altai__horseTravel-day_shortDescription');
+        shortDescriptionEl.textContent = day.ShortDescription;
+        dayEl.append(shortDescriptionEl);
+
+    });
+
+// Сплав на рафтах по Катуни, raftingKatun
+const raftingKatun =  `[
+    {
+        "id": "1",
+        "Photo": "./images/katun1.jpg",
+        "ShortDescription": "Вот такие виды нас ждали.",
+        "Description": "lorem50"
+    },
+    {
+        "id": "2",
+        "Photo": "./images/katun2.jpg",
+        "ShortDescription": "Наш рафт выдержал все испытания.",
+        "Description": "lorem50"
+    },
+    {
+        "id": "3",
+        "Photo": "./images/katun3.jpg",
+        "ShortDescription": "Река показывала нам свой нрав и горы.",
+        "Description": "lorem50"
+    },
+    {
+        "id": "4",
+        "Photo": "./images/katun4.jpg",
+        "ShortDescription": "Наша неутомимая каманда!",
+        "Description": "lorem50"
+    }
+]`
+const raftingKatunPlaces = JSON.parse(raftingKatun);
+
+raftingKatunPlaces.forEach(place => {
+
+    const placesEl = document.querySelector('.altai__raftingKatun-places');
+
+        const placeEl = document.createElement('div');
+        placeEl.classList.add('altai__raftingKatun-place');
+        placesEl.append(placeEl);
+
+        const placePhotoEl = document.createElement('img');
+        placePhotoEl.classList.add('altai__raftingKatun-place_photo');
+        placePhotoEl.src = place.Photo;
+        placePhotoEl.setAttribute('alt', `photo-place${place.id}`);
+        placeEl.append(placePhotoEl);
+
+        const shortDescriptionEl = document.createElement('p');
+        shortDescriptionEl.classList.add('altai__raftingKatun-place_shortDescription');
+        shortDescriptionEl.textContent = place.ShortDescription;
+        placeEl.append(shortDescriptionEl);
 
     });
