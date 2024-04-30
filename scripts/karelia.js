@@ -3,7 +3,7 @@ const kareliaTravels = `[
     {
         "id": "1",
         "TravelName": "Сплав на байдарках",
-        "Photo": "./images/1suguina.JPG",
+        "Photo": "./images/kareliaSplav.jpg",
         "Link": "#karelia__splavChirkaKem",
         "ShortDescription": "Река Чирка-Кемь, 250 км до полярного круга."
     },
@@ -54,65 +54,57 @@ const splavChirkaKem =  `[
     {
         "id": "1",
         "DayNumber": "1",
-        "Photo": "./images/1suguina.JPG",
-        "Location": "урочище Сугойна",
-        "ShortDescription": "Отпарвная точка, тут мы пересели на лошадей.",
+        "Photo": "./images/karelia1.jpg",
+        "Location": "урочище Андронова Гора",
+        "ShortDescription": "Наша отправная точка, собираем катамараны.",
         "Description": "lorem50"
     },
     {
         "id": "2",
         "DayNumber": "2",
-        "Photo": "./images/2muehta.JPG",
-        "Location": "урочище Муехта",
-        "ShortDescription": "Живописные места, море зелени и вековые деревья.",
+        "Photo": "./images/2karelia.jpg",
+        "Location": "порог Хаудо",
+        "ShortDescription": "Порог 2 категории сложности, был адреналин.",
         "Description": "lorem50"
     },
     {
         "id": "3",
         "DayNumber": "3",
-        "Photo": "./images/3waterfall.JPG",
-        "Location": "Водопад",
-        "ShortDescription": "Потрязающий водопад с ледяной водой и крутым спуском.",
+        "Photo": "./images/3karelia.jpg",
+        "Location": "Сегодня было поспокойнее",
+        "ShortDescription": "Приключения продолжаются, снова баллоны под попой).",
         "Description": "lorem50"
     },
     {
         "id": "4",
         "DayNumber": "4",
-        "Photo": "./images/4baioukskiy.JPG",
-        "Location": "Байоюкский перевал",
-        "ShortDescription": "Ради такой красоты стоит преодолеть тысячи километров.",
+        "Photo": "./images/4karelia.jpg",
+        "Location": "Дневка",
+        "ShortDescription": "Сегодня дневка, можно отдохнуть и никуда не торопиться.",
         "Description": "lorem50"
     },
     {
         "id": "5",
         "DayNumber": "5",
-        "Photo": "./images/5veronica.JPG",
-        "Location": "озеро Вероника",
-        "ShortDescription": "Существует легенда..., ну сами все узнаете, когда там побываете.",
+        "Photo": "./images/5karelia.jpg",
+        "Location": "Снова на воду!",
+        "ShortDescription": "Подкачали баллоны, взяли весла и погребли.",
         "Description": "lorem50"
     },
     {
         "id": "6",
         "DayNumber": "6",
-        "Photo": "./images/6karakolskie.png",
-        "Location": "Каракольские озера",
-        "ShortDescription": "До озер мы так и не дошли, т.к. был сильный туман в тот день.",
+        "Photo": "./images/6karelia.jpg",
+        "Location": "Приключение подходит к концу",
+        "ShortDescription": "Еще несколько порогов и финальная стоянка.",
         "Description": "lorem50"
     },
     {
         "id": "7",
         "DayNumber": "7",
-        "Photo": "./images/7kedrovaya.JPG",
-        "Location": "Кедровая поляна",
-        "ShortDescription": "Тут мы ночевали несколько ночей, на радость наших четвероногих друзей и нашу тоже.",
-        "Description": "lorem50"
-    },
-    {
-        "id": "8",
-        "DayNumber": "8",
-        "Photo": "./images/8taezhnik.jpg",
-        "Location": "эко-отель Таёжник",
-        "ShortDescription": "Возвращение на базу, на берегу потрясающей реки Катунь.",
+        "Photo": "./images/7karelia.jpg",
+        "Location": "День отбытия, немного грустно",
+        "ShortDescription": "Вот и закончилось это замечательное приключение, хочется все повторить!",
         "Description": "lorem50"
     }
 ]`

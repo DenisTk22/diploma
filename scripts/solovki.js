@@ -3,7 +3,7 @@ const solovkiTravels = `[
     {
         "id": "1",
         "TravelName": "Соловки 2023",
-        "Photo": "./images/1suguina.JPG",
+        "Photo": "./images/solovki2023.jpg",
         "Link": "#karelia__splavChirkaKem",
         "ShortDescription": "Остров в Белом море с тяжелой историей."
     }
@@ -46,26 +46,26 @@ solovkiTravelsData.forEach(travel => {
 const solovki =  `[
     {
         "id": "1",
-        "Photo": "./images/katun1.jpg",
-        "ShortDescription": "Вот такие виды нас ждали.",
+        "Photo": "./images/solovkiBut1.jpg",
+        "ShortDescription": "Сейчас Соловки - это люди, живущие от навигации до навигации.",
         "Description": "lorem50"
     },
     {
         "id": "2",
-        "Photo": "./images/katun2.jpg",
-        "ShortDescription": "Наш рафт выдержал все испытания.",
+        "Photo": "./images/solovki2.jpg",
+        "ShortDescription": "Красивый монастырь с темными подвалами.",
         "Description": "lorem50"
     },
     {
         "id": "3",
-        "Photo": "./images/katun3.jpg",
-        "ShortDescription": "Река показывала нам свой нрав и горы.",
+        "Photo": "./images/solovkiMore3.jpg",
+        "ShortDescription": "И конечно же Белое море, питаемое Северным Ледовитым Океаном.",
         "Description": "lorem50"
     },
     {
         "id": "4",
-        "Photo": "./images/katun4.jpg",
-        "ShortDescription": "Наша неутомимая каманда!",
+        "Photo": "./images/solovkiLes4.jpg",
+        "ShortDescription": "Хоть это и остров, но и там есть бескрайние леса и озера",
         "Description": "lorem50"
     }
 ]`
@@ -76,17 +76,17 @@ solovkiPlaces.forEach(place => {
     const placesEl = document.querySelector('.solovki__trip2023-places');
 
         const placeEl = document.createElement('div');
-        placeEl.classList.add('solovki__trip2023-places-place');
+        placeEl.classList.add('solovki__trip2023-place');
         placesEl.append(placeEl);
 
         const placePhotoEl = document.createElement('img');
-        placePhotoEl.classList.add('solovki__trip2023-places-place_photo');
+        placePhotoEl.classList.add('solovki__trip2023-place_photo');
         placePhotoEl.src = place.Photo;
         placePhotoEl.setAttribute('alt', `photo-place${place.id}`);
         placeEl.append(placePhotoEl);
 
         const shortDescriptionEl = document.createElement('p');
-        shortDescriptionEl.classList.add('solovki__trip2023-places_shortDescription');
+        shortDescriptionEl.classList.add('solovki__trip2023-place_shortDescription');
         shortDescriptionEl.textContent = place.ShortDescription;
         placeEl.append(shortDescriptionEl);
 

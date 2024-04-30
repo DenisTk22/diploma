@@ -1,0 +1,144 @@
+//Страница Путешествие на остров Соловки
+.solovki {
+    padding-top: $MainPaddingTop;
+
+    &__main {
+        background: url(../images/solovkiMain.jpg) no-repeat;
+        height: 833px;
+    }
+
+    &__title {
+        padding-left: $MainPaddingLeft;
+        width: 50%;
+        margin-bottom: 83px;
+        color: rgb(33, 33, 33);
+        font-family: $Montserrat;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+
+    &__text {
+        padding-left: $MainPaddingLeft;
+        width: 80%;
+        margin-bottom: 100px;
+        color: rgb(194, 183, 183);
+        font-family: $Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+
+    &__my-travels {
+        display: flex;
+        gap: 15px;
+        padding-left: 50px;
+    }
+
+    &__travel {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_name {
+            z-index: 1;
+            margin-bottom: -25px;
+            color: rgb(194, 183, 183);
+            font-family: $Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 1px;
+        }
+
+        &_photo {
+            width: 100%;
+            border: 2px solid $linkColor;
+            border-radius: 0 0 50% 50%;
+        }
+
+        &_photo:hover {
+            border: 2px solid $linkColorHover;
+        }
+
+        &_shortDescription {
+            width: 95%;
+            text-align: center;
+            color: rgb(194, 183, 183);
+            font-family: $Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 1px;
+        }
+    }
+
+    &__trip2023 {
+        padding-top: $MainPaddingTop;
+
+        &_title {
+            padding-left: $MainPaddingLeft;
+            margin-bottom: 50px;
+
+            color: rgb(33, 33, 33);
+            font-family: $Montserrat;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 50px;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        &_text {
+            padding-left: $MainPaddingLeft;
+            margin-bottom: 30px;
+
+            font-family: $Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+    }
+
+    &__trip2023-places {
+        display: flex;
+        padding: 25px 30px;
+        justify-content: space-between;
+        background: $backgroundMain;
+    }
+
+    &__trip2023-place {
+        width: 250px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #888;
+
+        &_photo {
+            width: 100%;
+            height: 155px;
+        }
+
+        &_photo:hover {
+            transform: scale(1.13);
+            transition-duration: 500ms;
+        }
+
+        &_shortDescription {
+            text-align: center;
+            padding: 5px;
+
+            color: rgb(49, 49, 49);
+            font-family: $Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 1px;
+        }
+    }
+}

@@ -217,7 +217,7 @@ p {
   padding-top: 80px;
 }
 .karelia__main {
-  background: url(../images/altai.jpg) no-repeat;
+  background: url(../images/kareliaTitul.jpg) no-repeat;
   height: 833px;
 }
 .karelia__title {
@@ -399,6 +399,130 @@ p {
   transition-duration: 500ms;
 }
 .karelia__kem-place_shortDescription {
+  text-align: center;
+  padding: 5px;
+  color: rgb(49, 49, 49);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.solovki {
+  padding-top: 80px;
+}
+.solovki__main {
+  background: url(../images/solovkiMain.jpg) no-repeat;
+  height: 833px;
+}
+.solovki__title {
+  padding-left: 96px;
+  width: 50%;
+  margin-bottom: 83px;
+  color: rgb(33, 33, 33);
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.solovki__text {
+  padding-left: 96px;
+  width: 80%;
+  margin-bottom: 100px;
+  color: rgb(194, 183, 183);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.solovki__my-travels {
+  display: flex;
+  gap: 15px;
+  padding-left: 50px;
+}
+.solovki__travel {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.solovki__travel_name {
+  z-index: 1;
+  margin-bottom: -25px;
+  color: rgb(194, 183, 183);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+.solovki__travel_photo {
+  width: 100%;
+  border: 2px solid rgb(39, 85, 83);
+  border-radius: 0 0 50% 50%;
+}
+.solovki__travel_photo:hover {
+  border: 2px solid rgb(89, 187, 182);
+}
+.solovki__travel_shortDescription {
+  width: 95%;
+  text-align: center;
+  color: rgb(194, 183, 183);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+.solovki__trip2023 {
+  padding-top: 80px;
+}
+.solovki__trip2023_title {
+  padding-left: 96px;
+  margin-bottom: 50px;
+  color: rgb(33, 33, 33);
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.solovki__trip2023_text {
+  padding-left: 96px;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.solovki__trip2023-places {
+  display: flex;
+  padding: 25px 30px;
+  justify-content: space-between;
+  background: rgb(241, 241, 241);
+}
+.solovki__trip2023-place {
+  width: 250px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #888;
+}
+.solovki__trip2023-place_photo {
+  width: 100%;
+  height: 155px;
+}
+.solovki__trip2023-place_photo:hover {
+  transform: scale(1.13);
+  transition-duration: 500ms;
+}
+.solovki__trip2023-place_shortDescription {
   text-align: center;
   padding: 5px;
   color: rgb(49, 49, 49);
