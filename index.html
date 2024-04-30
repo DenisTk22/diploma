@@ -15,6 +15,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <!-- script -->
     <script src="./scripts/altai.js" defer></script>
+    <script src="./scripts/karelia.js" defer></script>
+    <script src="./scripts/solovki.js" defer></script>
 
     <title>My Travels</title>
 </head>
@@ -38,7 +40,7 @@
                 <ul class="main__list">
                     <li class="main__list_item">Мои путешествия:</li>
                     <li><a class="main__list_item main__list_item_hover" href="#altai">Алтай</a></li>
-                    <li><a class="main__list_item main__list_item_hover" href="#">Карелия</a></li>
+                    <li><a class="main__list_item main__list_item_hover" href="#karelia">Карелия</a></li>
                     <li><a class="main__list_item main__list_item_hover" href="#">Соловки</a></li>
                     <li><a class="main__list_item main__list_item_hover" href="#">Поволжье</a></li>
                 </ul>
@@ -153,20 +155,77 @@
         </section>
         <section id="karelia" class="karelia">
           <div class="karelia__main">
-            <p class="karelia__title"></p>
-            <p class="karelia__text"></p>
-            <div class="karelia__my-travels"></div>
+            <p class="karelia__title">Карелия</p>
+            <p class="karelia__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium deserunt repellendus, odio vel eaque earum iste blanditiis omnis velit! Corrupti blanditiis tenetur exercitationem autem cum consequatur explicabo velit sunt, excepturi reprehenderit quod sapiente, itaque voluptatibus! Deleniti cupiditate, porro eaque adipisci esse dolore maiores rerum dolorum fugiat distinctio tenetur soluta. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nobis neque provident commodi laudantium quas adipisci, porro dolore voluptas aperiam tempore aliquid cumque rerum. Earum fugiat commodi, non dolorum ea, beatae aliquam nesciunt harum nisi reiciendis sapiente aut quia exercitationem amet neque enim incidunt repellat! Aperiam odio pariatur iusto!
+            </p>
+            <div class="karelia__my-travels">
+              <!-- блок формируется файлом karelia.js, kareliaTravels -->
+                <!-- <div class="karelia__travel">
+                  <p class="karelia__travel_name"></p>
+                  <a href="#" class="karelia__travel_link">
+                    <img class="karelia__travel_photo" src="#" alt="travel">
+                  </a>
+                  <p class="karelia__travel_shortDescription"></p>
+                </div> -->
+            </div>
           </div>
-          <div id="karelia__splavChirka-Kem" class="karelia__splavChirka-Kem"></div>
-          <div id="karelia__Kem" class="karelia__Kem"></div>
+          <div id="karelia__splavChirkaKem" class="karelia__splavChirkaKem">
+            <h2 class="karelia__splavChirkaKem_title">Сплав на байдарках, река Чирка-Кемь,  июль - август 2023 год</h2>
+              <p class="karelia__splavChirkaKem_text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum architecto, tenetur, ullam esse eum obcaecati nesciunt laboriosam velit doloremque cum quaerat exercitationem quibusdam laudantium omnis explicabo blanditiis voluptate perferendis nisi. Consectetur pariatur asperiores, esse quos iste debitis, error labore quo culpa beatae numquam, animi saepe sed obcaecati veritatis excepturi explicabo sequi totam magni? Molestiae dolorum delectus id corporis aliquam consequatur nisi aperiam tenetur laudantium asperiores, dolore nostrum accusantium magni iusto vitae voluptate beatae doloremque officia qui. Vero neque iure corrupti vitae illo magni laboriosam quae earum dolores, quo natus, perferendis placeat saepe distinctio laborum error expedita. Laudantium id delectus nemo.
+              </p>
+              <div class="karelia__splavChirkaKem-days">
+            <!-- блок формируется файлом karelia.js, splavChirkaKem -->  
+              <!-- <div class="karelia__splavChirkaKem-day">
+                <p class="karelia__splavChirkaKem-day_number">День 1</p>
+                <img src="#" alt="photo-day1" class="karelia__splavChirkaKem-day_photo">
+                <p class="karelia__splavChirkaKem-day_location"></p>
+                <p class="karelia__splavChirkaKem-day_shortDescription"></p>
+              </div> -->
+              </div>
+          </div>
+          <div id="karelia__kem" class="karelia__kem">
+            <h2 class="karelia__kem_title">Сплав на рафтах, река Катунь, август 2022 год</h2>
+              <p class="karelia__kem_text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum architecto, tenetur, ullam esse eum obcaecati nesciunt laboriosam velit doloremque cum quaerat exercitationem quibusdam laudantium omnis explicabo blanditiis voluptate perferendis nisi. Consectetur pariatur asperiores, esse quos iste debitis, error labore quo culpa beatae numquam, animi saepe sed obcaecati veritatis excepturi explicabo sequi totam magni? Molestiae dolorum delectus id corporis aliquam consequatur nisi aperiam tenetur laudantium asperiores, dolore nostrum accusantium magni iusto vitae voluptate beatae doloremque officia qui. Vero neque iure corrupti vitae illo magni laboriosam quae earum dolores, quo natus, perferendis placeat saepe distinctio laborum error expedita. Laudantium id delectus nemo.
+              </p>
+              <div class="karelia__kem-places">
+                <!-- блок формируется файлом karelia.js, kem -->  
+              <!-- <div class="karelia__kem-place">
+                <img src="#" alt="photo1" class="karelia__kem-place_photo">
+                <p class="karelia__kem-place_shortDescription"></p>
+              </div> -->
+              </div>
+          </div>
         </section>
         <section id="solovki" class="solovki">
           <div class="solovki__main">
-            <p class="solovki__title"></p>
-            <p class="solovki__text"></p>
-            <div class="solovki__my-travels"></div>
+            <p class="solovki__title">Соловки</p>
+            <p class="solovki__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptas eius asperiores enim odit in cumque, magni rerum laborum soluta officiis accusamus vitae! Cumque, esse. Praesentium mollitia id magni amet expedita quasi ipsam est neque reprehenderit perferendis eos ab suscipit ullam reiciendis doloremque excepturi illum earum quo minus nisi, repellendus totam ipsum esse hic? Laboriosam magni dolorum explicabo excepturi nam quam mollitia amet sed enim sint dicta commodi, maiores est alias fugiat neque voluptate ipsum voluptas nulla molestias placeat dolores? Nostrum quos praesentium temporibus sint, doloremque non iste ipsum ipsam sapiente incidunt dolores veritatis voluptas, veniam aliquid cupiditate. Odit, beatae!</p>
+            <div class="solovki__my-travels">
+              <!-- блок формируется файлом solovki.js, solovkiTravels -->
+                <!-- <div class="solovki__travel">
+                  <p class="solovki__travel_name"></p>
+                  <a href="#" class="solovki__travel_link">
+                    <img class="solovki__travel_photo" src="#" alt="travel">
+                  </a>
+                  <p class="solovki__travel_shortDescription"></p>
+                </div> -->
+            </div>
           </div>
-          <div id="solovki__trip2023" class="solovki__trip2023"></div>
+          <div id="solovki__trip2023" class="solovki__trip2023">
+            <h2 class="solovki__trip2023_title">Сплав на рафтах, река Катунь, август 2022 год</h2>
+            <p class="solovki__trip2023_text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum architecto, tenetur, ullam esse eum obcaecati nesciunt laboriosam velit doloremque cum quaerat exercitationem quibusdam laudantium omnis explicabo blanditiis voluptate perferendis nisi. Consectetur pariatur asperiores, esse quos iste debitis, error labore quo culpa beatae numquam, animi saepe sed obcaecati veritatis excepturi explicabo sequi totam magni? Molestiae dolorum delectus id corporis aliquam consequatur nisi aperiam tenetur laudantium asperiores, dolore nostrum accusantium magni iusto vitae voluptate beatae doloremque officia qui. Vero neque iure corrupti vitae illo magni laboriosam quae earum dolores, quo natus, perferendis placeat saepe distinctio laborum error expedita. Laudantium id delectus nemo.
+            </p>
+            <div class="solovki__trip2023-places">
+                <!-- блок формируется файлом solovki.js, solovki -->  
+              <!-- <div class="solovki__trip2023-place">
+                <img src="#" alt="photo1" class="solovki__trip2023-place_photo">
+                <p class="solovki__trip2023-place_shortDescription"></p>
+              </div> -->
+            </div>
+          </div>
         </section>
     </div>
     </div>

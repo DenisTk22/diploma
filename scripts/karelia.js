@@ -1,56 +1,56 @@
-//Путешествия на Алтае
-const altaiTravels = `[
+//Путешествия в Карелию
+const kareliaTravels = `[
     {
         "id": "1",
-        "TravelName": "Конный поход",
+        "TravelName": "Сплав на байдарках",
         "Photo": "./images/1suguina.JPG",
-        "Link": "#altai__horseTravel",
-        "ShortDescription": "Набрались массу впечатлений!."
+        "Link": "#karelia__splavChirkaKem",
+        "ShortDescription": "Река Чирка-Кемь, 250 км до полярного круга."
     },
     {
         "id": "2",
-        "TravelName": "Сплав на рафтах",
-        "Photo": "./images/8taezhnik.jpg",
-        "Link": "#altai__raftingKatun",
-        "ShortDescription": "Катунь - быстрая и холодная река Алтая."
+        "TravelName": "город Кемь",
+        "Photo": "./images/1suguina.JPG",
+        "Link": "#karelia__kem",
+        "ShortDescription": "Небольшой городок Кемь расположен на берегу Белого моря."
     }
 ]`
 
-const altaiTravelsData = JSON.parse(altaiTravels);
+const kareliaTravelsData = JSON.parse(kareliaTravels);
 
-altaiTravelsData.forEach(travel => {
+kareliaTravelsData.forEach(travel => {
 
-    const altaiMyTravelsEl = document.querySelector('.altai__my-travels');
+    const kareliaMyTravelsEl = document.querySelector('.karelia__my-travels');
 
         const travelEl = document.createElement('div');
-        travelEl.classList.add('altai__travel');
-        altaiMyTravelsEl.append(travelEl);
+        travelEl.classList.add('karelia__travel');
+        kareliaMyTravelsEl.append(travelEl);
 
         const travelNameEl = document.createElement('p');
-        travelNameEl.classList.add('altai__travel_name');
+        travelNameEl.classList.add('karelia__travel_name');
         travelNameEl.textContent = `${travel.TravelName}`;
         travelEl.append(travelNameEl);
 
         const travelLinkEl = document.createElement('a');
-        travelLinkEl.classList.add('altai__travel_link');
+        travelLinkEl.classList.add('karelia__travel_link');
         travelLinkEl.href = `${travel.Link}`;
         travelEl.append(travelLinkEl);
 
             const travelPhotoEl = document.createElement('img');
-            travelPhotoEl.classList.add('altai__travel_photo');
+            travelPhotoEl.classList.add('karelia__travel_photo');
             travelPhotoEl.src = travel.Photo;
             travelPhotoEl.setAttribute('alt', `${travel.TravelName}`);
             travelLinkEl.append(travelPhotoEl);
 
         const shortDescriptionEl = document.createElement('p');
-        shortDescriptionEl.classList.add('altai__travel_shortDescription');
+        shortDescriptionEl.classList.add('karelia__travel_shortDescription');
         shortDescriptionEl.textContent = travel.ShortDescription;
         travelEl.append(shortDescriptionEl);
 
 });
 
-// Дни конного похода, horseTravel
-const horseTravel =  `[
+// Дни сплава на байдарках, splavChirkaKem
+const splavChirkaKem =  `[
     {
         "id": "1",
         "DayNumber": "1",
@@ -116,41 +116,41 @@ const horseTravel =  `[
         "Description": "lorem50"
     }
 ]`
-const horseTravelDays = JSON.parse(horseTravel);
+const splavChirkaKemDays = JSON.parse(splavChirkaKem);
 
-horseTravelDays.forEach(day => {
+splavChirkaKemDays.forEach(day => {
 
-    const daysEl = document.querySelector('.altai__horseTravel-days');
+    const daysEl = document.querySelector('.karelia__splavChirkaKem-days');
 
     const dayEl = document.createElement('div');
-    dayEl.classList.add('altai__horseTravel-day');
+    dayEl.classList.add('karelia__splavChirkaKem-day');
     daysEl.append(dayEl);
 
         const dayNumberEl = document.createElement('p');
-        dayNumberEl.classList.add('altai__horseTravel-day_number');
+        dayNumberEl.classList.add('karelia__splavChirkaKem-day_number');
         dayNumberEl.textContent = `День ${day.DayNumber}`;
         dayEl.append(dayNumberEl);
 
         const dayPhotoEl = document.createElement('img');
-        dayPhotoEl.classList.add('altai__horseTravel-day_photo');
+        dayPhotoEl.classList.add('karelia__splavChirkaKem-day_photo');
         dayPhotoEl.src = day.Photo;
         dayPhotoEl.setAttribute('alt', `photo-day${day.DayNumber}`);
         dayEl.append(dayPhotoEl);
 
         const locationEl = document.createElement('p');
-        locationEl.classList.add('altai__horseTravel-day_location');
+        locationEl.classList.add('karelia__splavChirkaKem-day_location');
         locationEl.textContent = day.Location;
         dayEl.append(locationEl);
 
         const shortDescriptionEl = document.createElement('p');
-        shortDescriptionEl.classList.add('altai__horseTravel-day_shortDescription');
+        shortDescriptionEl.classList.add('karelia__splavChirkaKem-day_shortDescription');
         shortDescriptionEl.textContent = day.ShortDescription;
         dayEl.append(shortDescriptionEl);
 
     });
 
-// Сплав на рафтах по Катуни, raftingKatun
-const raftingKatun =  `[
+// Город Кемь, kem
+const kem =  `[
     {
         "id": "1",
         "Photo": "./images/katun1.jpg",
@@ -176,24 +176,24 @@ const raftingKatun =  `[
         "Description": "lorem50"
     }
 ]`
-const raftingKatunPlaces = JSON.parse(raftingKatun);
+const kemPlaces = JSON.parse(kem);
 
-raftingKatunPlaces.forEach(place => {
+kemPlaces.forEach(place => {
 
-    const placesEl = document.querySelector('.altai__raftingKatun-places');
+    const placesEl = document.querySelector('.karelia__kem-places');
 
         const placeEl = document.createElement('div');
-        placeEl.classList.add('altai__raftingKatun-place');
+        placeEl.classList.add('karelia__kem-place');
         placesEl.append(placeEl);
 
         const placePhotoEl = document.createElement('img');
-        placePhotoEl.classList.add('altai__raftingKatun-place_photo');
+        placePhotoEl.classList.add('karelia__kem-place_photo');
         placePhotoEl.src = place.Photo;
         placePhotoEl.setAttribute('alt', `photo-place${place.id}`);
         placeEl.append(placePhotoEl);
 
         const shortDescriptionEl = document.createElement('p');
-        shortDescriptionEl.classList.add('altai__raftingKatun-place_shortDescription');
+        shortDescriptionEl.classList.add('karelia__kem-place_shortDescription');
         shortDescriptionEl.textContent = place.ShortDescription;
         placeEl.append(shortDescriptionEl);
 
