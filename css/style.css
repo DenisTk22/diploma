@@ -213,6 +213,38 @@ p {
   letter-spacing: 1px;
 }
 
+.currentActive {
+  position: absolute;
+  top: 0;
+  left: center;
+  width: 500px;
+  z-index: 10;
+  background: #fff;
+}
+.currentActive__photo {
+  width: 100%;
+}
+.currentActive__description {
+  color: #000;
+}
+.currentActive__close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: 2px solid #fff;
+  padding: 5px;
+  color: #fff;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.currentActive__hidden {
+  display: none;
+}
 .karelia {
   padding-top: 80px;
 }
@@ -308,6 +340,7 @@ p {
   text-align: left;
 }
 .karelia__splavChirkaKem-days {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
