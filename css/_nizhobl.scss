@@ -1,0 +1,35 @@
+// Путешествия по Нижегородской области
+.nizhobl {
+    padding-top: $MainPaddingTop;
+
+    &__main {
+        background: url(../images/solovkiMain.jpg) no-repeat;
+        height: 833px;
+    }
+
+    &__title {
+        padding-left: $MainPaddingLeft;
+        width: 50%;
+        margin-bottom: 83px;
+        color: rgb(33, 33, 33);
+        font-family: $Montserrat;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+
+    &__text {
+        padding-left: $MainPaddingLeft;
+        width: 80%;
+        margin-bottom: 100px;
+        color: rgb(194, 183, 183);
+        font-family: $Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+}

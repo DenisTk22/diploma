@@ -533,6 +533,38 @@ p {
   letter-spacing: 1px;
 }
 
+.nizhobl {
+  padding-top: 80px;
+}
+.nizhobl__main {
+  background: url(../images/solovkiMain.jpg) no-repeat;
+  height: 833px;
+}
+.nizhobl__title {
+  padding-left: 96px;
+  width: 50%;
+  margin-bottom: 83px;
+  color: rgb(33, 33, 33);
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.nizhobl__text {
+  padding-left: 96px;
+  width: 80%;
+  margin-bottom: 100px;
+  color: rgb(194, 183, 183);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
 .center {
   /*центрирование, нужно для планшета*/
   /* padding-left: calc(50% - 800px); 1600/2, 1600px - ширина сетки */

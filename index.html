@@ -17,6 +17,7 @@
     <script src="./scripts/altai.js" defer></script>
     <script src="./scripts/karelia.js" defer></script>
     <script src="./scripts/solovki.js" defer></script>
+    <script src="./scripts/nizhobl.js" defer></script>
 
     <title>My Travels</title>
 </head>
@@ -42,7 +43,7 @@
                     <li><a class="main__list_item main__list_item_hover" href="#altai">Алтай</a></li>
                     <li><a class="main__list_item main__list_item_hover" href="#karelia">Карелия</a></li>
                     <li><a class="main__list_item main__list_item_hover" href="#solovki">Соловки</a></li>
-                    <li><a class="main__list_item main__list_item_hover" href="#">Поволжье</a></li>
+                    <li><a class="main__list_item main__list_item_hover" href="#">Нижегородская область</a></li>
                 </ul>
             </div>
             <!-- Слайдер карусель -->
@@ -51,6 +52,7 @@
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -68,10 +70,17 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <a href="#"><img src="./images/mainSlider3.JPG" class="d-block pic-size " alt="picture3"></a>
+                    <a href="#karelia__splavChirkaKem"><img src="./images/mainSlider3.JPG" class="d-block pic-size " alt="picture3"></a>
                     <div class="carousel-caption d-none d-md-block">
                       <h5>река Чирка-Кемь</h5>
                       <p>Карелия</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#solovki__trip2023"><img src="./images/solovki2023.jpg" class="d-block pic-size " alt="picture4"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Крепость из прибрежных камней</h5>
+                      <p>остров Соловки</p>
                     </div>
                   </div>
                 </div>
@@ -89,7 +98,7 @@
             <div class="about__info">
               <h1 class="about__title">Обо мне</h1>
               <h4 class="about__preview">Меня зовут Денис Ткачёв, я живу в Нижнем Новгороде. Я люблю путешествовать. И не важно нужно ли для этого куда-то лететь или просто выйти на улицу. Для меня, прогулку в своем городе тоже можно превратить в петешествие - разработать маршрут, взять термос с любимым напитком, подпопник и вперед! Путешествие начинается, когда вы закрываете за собой дверь.</h4>
-              <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta esse alias officiis quos impedit odio ex non. Aspernatur asperiores magni consequuntur aliquam eaque quasi ab, suscipit dolores soluta error! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa est corrupti quia fugit consectetur aperiam obcaecati, et laudantium maiores consequatur sint, earum veniam illum quae eligendi adipisci reprehenderit quaerat.</p>
+              <p class="about__text">Цель данного сайти мотивировать людей на приключения, показать что приключения вокруг нас. А также объединить людей в поисках приключений. Общаясь с людьми, я понял, что тех, кто хотел бы пойти в поход одного дня или на несколько дней, очень много. Порой не хватеат мотивации, времени, но чаще всего не хватате компании, с кем можно было бы пойти куда глаза глядят. Вместе всегда веселей и надежнее. </p>
             </div>
             <div class="about__photo">
               <img src="./images/about.jpg" alt="myPhoto">
@@ -223,6 +232,23 @@
               <!-- <div class="solovki__trip2023-place">
                 <img src="#" alt="photo1" class="solovki__trip2023-place_photo">
                 <p class="solovki__trip2023-place_shortDescription"></p>
+              </div> -->
+            </div>
+          </div>
+        </section>
+        <section id="nizhobl" class="nizhobl">
+          <div class="nizhobl__main">
+            <p class="nizhobl__title">Нижегородская область</p>
+            <p class="nizhobl__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, consequatur assumenda saepe voluptatem repellendus nemo dignissimos tenetur vel ea aut esse quis cumque. Perferendis error exercitationem saepe, rerum dolor quos!</p>
+            <p class="nizhobl__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laudantium harum hic! Exercitationem, iure dolorum, incidunt suscipit voluptatem vero est totam expedita ut ea excepturi veniam nam officia laudantium corrupti.</p>
+            <div class="nizhobl__my-travels">
+              <!-- блок формируется файлом nizhobl.js, nizhoblTravels -->
+              <!-- <div class="nizhobl__travel">
+                <p class="nizhobl__travel_name"></p>
+                <a href="#" class="nizhobl__travel_link">
+                  <img class="nizhobl__travel_photo" src="#" alt="travel">
+                </a>
+                <p class="nizhobl__travel_shortDescription"></p>
               </div> -->
             </div>
           </div>
