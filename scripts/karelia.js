@@ -149,13 +149,13 @@ splavChirkaKemDays.forEach(day => {
 
 //Клики по картинкам сплав на байдарках, река Чирка-Кемь
 
-getActivePhoto = (photo) => {
-    splavChirkaKemDays.forEach(day => {
-        console.log(day.id, Number(photo.alt.at(-1)));
+getActivePhoto = (photo, events) => {
+    const blockEvents = photo.parentElement.parentElement.parentElement;
+    events.forEach(day => {
         if (Number(day.id) === Number(photo.alt.at(-1))) {
             const activeEl = document.createElement('div');
             activeEl.classList.add('currentActive');
-            daysEl.append(activeEl);
+            blockEvents.append(activeEl); //daysEl.append(activeEl);
 
             const activePhotoEl = document.createElement('img');
             activePhotoEl.classList.add('currentActive__photo');
@@ -173,19 +173,24 @@ getActivePhoto = (photo) => {
             activeCloseEl.textContent = 'X';
             activeEl.append(activeCloseEl);
 
-            // daysEl.classList.add('currentActive__dark');
+            const darkingFeeld = document.createElement('div');
+            darkingFeeld.classList.add('currentActive__dark');
+            blockEvents.append(darkingFeeld);
         }
     });
 };
 
 closeActivePhoto = (close) => {
-    close.parentElement.classList.add('currentActive__hidden');
+    const closeEl = close.parentElement.parentElement.parentElement;
+    const activePhoto = close.parentElement;
+    const darkEl = closeEl.querySelector('.currentActive__dark');
+    activePhoto.remove();
+    darkEl.remove();
 };
-
 
 daysEl.addEventListener('click', ({ target }) => {
     if (target.classList.contains('karelia__splavChirkaKem-day_photo')) {
-        getActivePhoto(target);
+        getActivePhoto(target, splavChirkaKemDays);
     };
 
     if (target.classList.contains('currentActive__close')) {
@@ -222,23 +227,38 @@ const kem = `[
 ]`
 const kemPlaces = JSON.parse(kem);
 
-kemPlaces.forEach(place => {
+const placesEl = document.querySelector('.karelia__kem-places');
 
-    const placesEl = document.querySelector('.karelia__kem-places');
+kemPlaces.forEach(place => {
 
     const placeEl = document.createElement('div');
     placeEl.classList.add('karelia__kem-place');
     placesEl.append(placeEl);
 
+    const placeLinkEl = document.createElement('a');
+    placeLinkEl.classList.add('karelia__kem-place_link');
+    placeLinkEl.setAttribute('href', '#karelia__kem-places');
+    placeEl.append(placeLinkEl);
+
     const placePhotoEl = document.createElement('img');
     placePhotoEl.classList.add('karelia__kem-place_photo');
     placePhotoEl.src = place.Photo;
     placePhotoEl.setAttribute('alt', `photo-place${place.id}`);
-    placeEl.append(placePhotoEl);
+    placeLinkEl.append(placePhotoEl);
 
     const shortDescriptionEl = document.createElement('p');
     shortDescriptionEl.classList.add('karelia__kem-place_shortDescription');
     shortDescriptionEl.textContent = place.ShortDescription;
     placeEl.append(shortDescriptionEl);
 
+});
+
+placesEl.addEventListener('click', ({ target }) => {
+    if (target.classList.contains('karelia__kem-place_photo')) {
+        getActivePhoto(target, kemPlaces);
+    };
+
+    if (target.classList.contains('currentActive__close')) {
+        closeActivePhoto(target);
+    };
 });
