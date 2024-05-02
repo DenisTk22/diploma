@@ -17,10 +17,8 @@ p {
   margin-bottom: 0;
 }
 
-.altai {
-  padding-top: 80px;
-}
 .altai__main {
+  padding-top: 50px;
   background: url(../images/altai.jpg) no-repeat;
   height: 833px;
 }
@@ -88,7 +86,7 @@ p {
   letter-spacing: 1px;
 }
 .altai__horseTravel {
-  padding-top: 80px;
+  padding-top: 50px;
 }
 .altai__horseTravel_title {
   padding-left: 96px;
@@ -151,7 +149,7 @@ p {
   padding: 5px;
 }
 .altai__raftingKatun {
-  padding-top: 80px;
+  padding-top: 50px;
 }
 .altai__raftingKatun_title {
   padding-left: 96px;
@@ -245,10 +243,12 @@ p {
 .currentActive__hidden {
   display: none;
 }
-.karelia {
-  padding-top: 80px;
+.currentActive__dark {
+  opacity: 0.5;
 }
+
 .karelia__main {
+  padding-top: 50px;
   background: url(../images/kareliaTitul.jpg) no-repeat;
   height: 833px;
 }
@@ -316,7 +316,7 @@ p {
   letter-spacing: 1px;
 }
 .karelia__splavChirkaKem {
-  padding-top: 80px;
+  padding-top: 50px;
 }
 .karelia__splavChirkaKem_title {
   padding-left: 96px;
@@ -380,7 +380,7 @@ p {
   padding: 5px;
 }
 .karelia__kem {
-  padding-top: 80px;
+  padding-top: 50px;
 }
 .karelia__kem_title {
   padding-left: 96px;
@@ -442,10 +442,8 @@ p {
   letter-spacing: 1px;
 }
 
-.solovki {
-  padding-top: 80px;
-}
 .solovki__main {
+  padding-top: 50px;
   background: url(../images/solovkiMain.jpg) no-repeat;
   height: 833px;
 }
@@ -513,7 +511,7 @@ p {
   letter-spacing: 1px;
 }
 .solovki__trip2023 {
-  padding-top: 80px;
+  padding-top: 50px;
 }
 .solovki__trip2023_title {
   padding-left: 96px;
@@ -566,10 +564,8 @@ p {
   letter-spacing: 1px;
 }
 
-.nizhobl {
-  padding-top: 80px;
-}
 .nizhobl__main {
+  padding-top: 50px;
   background: url(../images/solovkiMain.jpg) no-repeat;
   height: 833px;
 }
@@ -597,6 +593,45 @@ p {
   letter-spacing: 1px;
   text-align: left;
 }
+.nizhobl__my-travels {
+  display: flex;
+  gap: 15px;
+  padding-left: 50px;
+}
+.nizhobl__travel {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nizhobl__travel_name {
+  z-index: 1;
+  margin-bottom: -25px;
+  color: rgb(194, 183, 183);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+.nizhobl__travel_photo {
+  width: 100%;
+  border: 2px solid rgb(39, 85, 83);
+  border-radius: 0 0 50% 50%;
+}
+.nizhobl__travel_photo:hover {
+  border: 2px solid rgb(89, 187, 182);
+}
+.nizhobl__travel_shortDescription {
+  width: 95%;
+  text-align: center;
+  color: rgb(194, 183, 183);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
 
 .center {
   /*центрирование, нужно для планшета*/
@@ -606,11 +641,11 @@ p {
 }
 
 .container {
-  width: 100%;
+  width: 1440px;
 }
 
 .content {
-  max-width: 1440px;
+  width: 100%;
 }
 
 .pic-size {
@@ -652,6 +687,7 @@ p {
   gap: 50px;
   padding-right: 150px;
   justify-content: flex-end;
+  margin-bottom: 0;
 }
 .main__navigation_item {
   color: rgb(39, 85, 83);
@@ -727,7 +763,7 @@ p {
   background: rgb(241, 241, 241);
 }
 .about__info {
-  padding-top: 80px;
+  padding-top: 50px;
   padding-left: 96px;
 }
 .about__title {
@@ -760,7 +796,7 @@ p {
 }
 
 .motivation {
-  padding-top: 80px;
+  padding-top: 50px;
   padding-left: 96px;
 }
 .motivation__title {
@@ -798,4 +834,23 @@ p {
 }
 .motivation__point_bold {
   font-weight: 700;
+}
+
+.footer {
+  width: 100%;
+  background: #000;
+  padding: 10px 50px 10px 96px;
+}
+.footer__nav {
+  display: flex;
+}
+.footer__createdBy {
+  color: rgb(49, 49, 49);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-align: left;
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */

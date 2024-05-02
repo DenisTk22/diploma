@@ -1,9 +1,8 @@
 //Страница Путешествия на Алтай
 .altai {
-    padding-top: $MainPaddingTop;
-    // padding-left: $MainPaddingLeft;
 
     &__main {
+        padding-top: $MainPaddingTop;
         background: url(../images/altai.jpg) no-repeat;
         height: 833px;
     }

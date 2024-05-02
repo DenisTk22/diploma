@@ -1,8 +1,8 @@
 //Страница Путешествие на остров Соловки
 .solovki {
-    padding-top: $MainPaddingTop;
 
     &__main {
+        padding-top: $MainPaddingTop;
         background: url(../images/solovkiMain.jpg) no-repeat;
         height: 833px;
     }

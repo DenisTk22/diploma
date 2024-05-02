@@ -36,15 +36,14 @@
     }
 
     &__dark {
-
+        opacity:0.5;
     }
 }
 
 .karelia {
-    padding-top: $MainPaddingTop;
-    // padding-left: $MainPaddingLeft;
 
     &__main {
+        padding-top: $MainPaddingTop;
         background: url(../images/kareliaTitul.jpg) no-repeat;
         height: 833px;
     }

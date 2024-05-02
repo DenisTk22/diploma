@@ -126,7 +126,7 @@ splavChirkaKemDays.forEach(day => {
 
     const dayLinkEl = document.createElement('a');
     dayLinkEl.classList.add('karelia__splavChirkaKem-day_link');
-    dayLinkEl.setAttribute('href', `#karelia__splavChirkaKem-days`);
+    dayLinkEl.setAttribute('href', '#karelia__splavChirkaKem-days');
     dayEl.append(dayLinkEl);
 
     const dayPhotoEl = document.createElement('img');
@@ -149,38 +149,48 @@ splavChirkaKemDays.forEach(day => {
 
 //Клики по картинкам сплав на байдарках, река Чирка-Кемь
 
+getActivePhoto = (photo) => {
+    splavChirkaKemDays.forEach(day => {
+        console.log(day.id, Number(photo.alt.at(-1)));
+        if (Number(day.id) === Number(photo.alt.at(-1))) {
+            const activeEl = document.createElement('div');
+            activeEl.classList.add('currentActive');
+            daysEl.append(activeEl);
+
+            const activePhotoEl = document.createElement('img');
+            activePhotoEl.classList.add('currentActive__photo');
+            activePhotoEl.src = day.Photo;
+            activePhotoEl.setAttribute('alt', `photo-day${day.DayNumber}`);
+            activeEl.append(activePhotoEl);
+
+            const activeDescriptionEl = document.createElement('p');
+            activeDescriptionEl.classList.add('currentActive__description');
+            activeDescriptionEl.textContent = day.Description;
+            activeEl.append(activeDescriptionEl);
+
+            const activeCloseEl = document.createElement('button');
+            activeCloseEl.classList.add('currentActive__close');
+            activeCloseEl.textContent = 'X';
+            activeEl.append(activeCloseEl);
+
+            // daysEl.classList.add('currentActive__dark');
+        }
+    });
+};
+
+closeActivePhoto = (close) => {
+    close.parentElement.classList.add('currentActive__hidden');
+};
+
+
 daysEl.addEventListener('click', ({ target }) => {
     if (target.classList.contains('karelia__splavChirkaKem-day_photo')) {
-        splavChirkaKemDays.forEach(day => {
-            console.log(day.id, Number(target.alt.at(-1)));
-            if (Number(day.id) === Number(target.alt.at(-1))) {
-                console.log('внутри');
-                const activeEl = document.createElement('div');
-                activeEl.classList.add('currentActive');
-                daysEl.append(activeEl);
-
-                const activePhotoEl = document.createElement('img');
-                activePhotoEl.classList.add('currentActive__photo');
-                activePhotoEl.src = day.Photo;
-                activePhotoEl.setAttribute('alt', `photo-day${day.DayNumber}`);
-                activeEl.append(activePhotoEl);
-
-                const activeDescriptionEl = document.createElement('p');
-                activeDescriptionEl.classList.add('currentActive__description');
-                activeDescriptionEl.textContent = day.Description;
-                activeEl.append(activeDescriptionEl);
-
-                const activeCloseEl = document.createElement('button');
-                activeCloseEl.classList.add('currentActive__close');
-                activeCloseEl.textContent = 'X';
-                activeEl.append(activeCloseEl);
-            }
-        });
-    }
+        getActivePhoto(target);
+    };
 
     if (target.classList.contains('currentActive__close')) {
-        target.parentElement.classList.add('currentActive__hidden');
-    }
+        closeActivePhoto(target);
+    };
 });
 
 // Город Кемь, kem

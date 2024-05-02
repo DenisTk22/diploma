@@ -13,12 +13,12 @@
 }
 
 .container {
-    width: 100%;
+    width: 1440px;
     // background: url(../images/myMain.JPG) no-repeat cover;
 }
 
 .content {
-    max-width: 1440px;
+    width: 100%;
 }
 
 //карусель картинок на главной странице
@@ -62,6 +62,7 @@
             gap: 50px;
             padding-right: 150px;
             justify-content: flex-end;
+            margin-bottom: 0;
         }
 
         &_item {
@@ -230,5 +231,27 @@
         &_bold {
             font-weight: 700;
         }
+    }
+}
+
+//Footer
+.footer {
+    width: 100%;
+    background: #000;
+    padding: 10px 50px 10px $MainPaddingLeft;
+
+    &__nav {
+        display: flex;
+    }
+
+    &__createdBy {
+        color: rgb(49, 49, 49);
+        font-family: $Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 1px;
+        text-align: left;
+        text-align: right;
     }
 }
