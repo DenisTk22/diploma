@@ -117,6 +117,7 @@ splavChirkaKemDays.forEach(day => {
 
     const dayEl = document.createElement('div');
     dayEl.classList.add('karelia__splavChirkaKem-day');
+    dayEl.classList.add('widthBox');
     daysEl.append(dayEl);
 
     const dayNumberEl = document.createElement('p');
@@ -147,15 +148,14 @@ splavChirkaKemDays.forEach(day => {
 
 });
 
-//Клики по картинкам сплав на байдарках, река Чирка-Кемь
-
+// Функция получения модального окна
 getActivePhoto = (photo, events) => {
     const blockEvents = photo.parentElement.parentElement.parentElement;
     events.forEach(day => {
         if (Number(day.id) === Number(photo.alt.at(-1))) {
             const activeEl = document.createElement('div');
             activeEl.classList.add('currentActive');
-            blockEvents.append(activeEl); //daysEl.append(activeEl);
+            blockEvents.append(activeEl);
 
             const activePhotoEl = document.createElement('img');
             activePhotoEl.classList.add('currentActive__photo');
@@ -180,6 +180,7 @@ getActivePhoto = (photo, events) => {
     });
 };
 
+// Функция закрытия модального окна
 closeActivePhoto = (close) => {
     const closeEl = close.parentElement.parentElement.parentElement;
     const activePhoto = close.parentElement;
@@ -188,6 +189,7 @@ closeActivePhoto = (close) => {
     darkEl.remove();
 };
 
+// Обработка кликов по фото
 daysEl.addEventListener('click', ({ target }) => {
     if (target.classList.contains('karelia__splavChirkaKem-day_photo')) {
         getActivePhoto(target, splavChirkaKemDays);
@@ -233,6 +235,7 @@ kemPlaces.forEach(place => {
 
     const placeEl = document.createElement('div');
     placeEl.classList.add('karelia__kem-place');
+    placeEl.classList.add('widthBox');
     placesEl.append(placeEl);
 
     const placeLinkEl = document.createElement('a');
@@ -253,6 +256,7 @@ kemPlaces.forEach(place => {
 
 });
 
+// Обработка кликов по фото
 placesEl.addEventListener('click', ({ target }) => {
     if (target.classList.contains('karelia__kem-place_photo')) {
         getActivePhoto(target, kemPlaces);

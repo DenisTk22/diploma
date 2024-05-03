@@ -13,20 +13,6 @@ const nizhoblTravels = `[
         "Photo": "./images/1suguina.JPG",
         "Link": "#karelia__kem",
         "ShortDescription": "Небольшой городок Кемь расположен на берегу Белого моря."
-    },
-    {
-        "id": "3",
-        "TravelName": "город Кемь",
-        "Photo": "./images/1suguina.JPG",
-        "Link": "#karelia__kem",
-        "ShortDescription": "Небольшой городок Кемь расположен на берегу Белого моря."
-    },
-    {
-        "id": "4",
-        "TravelName": "город Кемь",
-        "Photo": "./images/1suguina.JPG",
-        "Link": "#karelia__kem",
-        "ShortDescription": "Небольшой городок Кемь расположен на берегу Белого моря."
     }
 ]`
 

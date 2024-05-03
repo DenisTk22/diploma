@@ -108,6 +108,7 @@
     }
 
     &__trip2023-places {
+        position: relative;
         display: flex;
         padding: 25px 30px;
         justify-content: space-between;
@@ -115,7 +116,7 @@
     }
 
     &__trip2023-place {
-        width: 250px;
+        // width: 250px;
         border-radius: 5px;
         box-shadow: 0 0 5px #888;
 

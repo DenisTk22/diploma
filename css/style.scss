@@ -53,6 +53,10 @@
     }
 }
 
+.widthBox {
+    max-width: 250px;
+}
+
 .center {
     /*центрирование, нужно для планшета*/
     /* padding-left: calc(50% - 800px); 1600/2, 1600px - ширина сетки */
@@ -301,5 +305,128 @@
         letter-spacing: 1px;
         text-align: left;
         text-align: right;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        max-width: 100%;
+    }
+
+    .widthBox {
+        max-width: 200px;
+    }
+
+    .carousel {
+        right: 15%;
+        bottom: 22px;
+    }
+
+    .main {
+
+        &__navigation {
+            padding-top: 35px;
+            padding-bottom: 45px;
+        }
+        
+        &__text {
+            
+            &_quote {
+                font-size: 32px;
+                // font-weight: 900;
+                line-height: 32px;
+                // text-align: left;
+            }
+    
+            &_quote-auther {
+                font-size: 22px;
+                line-height: 22px;
+                // text-align: right;
+                // margin-bottom: 135px;
+                margin-bottom: 420px;
+            }
+    
+            &_sentence {
+                display: none;
+            }
+        }
+    }
+
+    .about {
+    
+        &__info {
+            padding-top: 20px;
+            padding-left: 70px;
+        }
+
+        &__title {
+            font-size: 42px;
+            margin-bottom: 30px;
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+    }
+
+    .motivation {
+        
+        &__title {
+        margin-bottom: 30px;
+        }
+    }
+
+    .altai {
+        
+        &__text {
+            width: 80%;
+        }
+
+        &__my-travels {
+            margin-top: 100px;
+            padding-left: 96px;
+        }
+
+        &__horseTravel_text {
+            width: 95%;
+        }
+
+        &__raftingKatun_text {
+            width: 95%;
+        }
+    }
+
+    .karelia {
+        
+        &__my-travels {
+        padding-left: 96px;
+        }
+
+        &__splavChirkaKem_text {
+            width: 95%;
+        }
+
+        &__kem_text {
+            width: 95%;
+        }
+    }
+
+    .solovki {
+        
+        &__my-travels {
+        padding-left: 96px;
+        }
+
+        &__trip2023_text {
+            width: 95%;
+        }
+    }
+
+    .nizhobl {
+        
+        &__my-travels {
+            padding-left: 96px;
+        }
     }
 }

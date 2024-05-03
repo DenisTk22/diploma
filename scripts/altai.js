@@ -118,24 +118,30 @@ const horseTravel =  `[
 ]`
 const horseTravelDays = JSON.parse(horseTravel);
 
-horseTravelDays.forEach(day => {
+const daysHTravelEl = document.querySelector('.altai__horseTravel-days');
 
-    const daysEl = document.querySelector('.altai__horseTravel-days');
+horseTravelDays.forEach(day => {
 
     const dayEl = document.createElement('div');
     dayEl.classList.add('altai__horseTravel-day');
-    daysEl.append(dayEl);
+    dayEl.classList.add('widthBox');
+    daysHTravelEl.append(dayEl);
 
         const dayNumberEl = document.createElement('p');
         dayNumberEl.classList.add('altai__horseTravel-day_number');
         dayNumberEl.textContent = `День ${day.DayNumber}`;
         dayEl.append(dayNumberEl);
 
+        const dayLinkEl = document.createElement('a');
+        dayLinkEl.classList.add('altai__horseTravel-day_link');
+        dayLinkEl.setAttribute('href', '#altai__horseTravel-days');
+        dayEl.append(dayLinkEl);
+
         const dayPhotoEl = document.createElement('img');
         dayPhotoEl.classList.add('altai__horseTravel-day_photo');
         dayPhotoEl.src = day.Photo;
         dayPhotoEl.setAttribute('alt', `photo-day${day.DayNumber}`);
-        dayEl.append(dayPhotoEl);
+        dayLinkEl.append(dayPhotoEl);
 
         const locationEl = document.createElement('p');
         locationEl.classList.add('altai__horseTravel-day_location');
@@ -148,6 +154,58 @@ horseTravelDays.forEach(day => {
         dayEl.append(shortDescriptionEl);
 
     });
+
+// Функция получения модального окна
+getActivePhoto = (photo, events) => {
+    const blockEvents = photo.parentElement.parentElement.parentElement;
+    events.forEach(day => {
+        if (Number(day.id) === Number(photo.alt.at(-1))) {
+            const activeEl = document.createElement('div');
+            activeEl.classList.add('currentActive');
+            blockEvents.append(activeEl);
+
+            const activePhotoEl = document.createElement('img');
+            activePhotoEl.classList.add('currentActive__photo');
+            activePhotoEl.src = day.Photo;
+            activePhotoEl.setAttribute('alt', `photo-day${day.DayNumber}`);
+            activeEl.append(activePhotoEl);
+
+            const activeDescriptionEl = document.createElement('p');
+            activeDescriptionEl.classList.add('currentActive__description');
+            activeDescriptionEl.textContent = day.Description;
+            activeEl.append(activeDescriptionEl);
+
+            const activeCloseEl = document.createElement('button');
+            activeCloseEl.classList.add('currentActive__close');
+            activeCloseEl.textContent = 'X';
+            activeEl.append(activeCloseEl);
+
+            const darkingFeeld = document.createElement('div');
+            darkingFeeld.classList.add('currentActive__dark');
+            blockEvents.append(darkingFeeld);
+        }
+    });
+};
+
+// Функция закрытия модального окна
+closeActivePhoto = (close) => {
+    const closeEl = close.parentElement.parentElement.parentElement;
+    const activePhoto = close.parentElement;
+    const darkEl = closeEl.querySelector('.currentActive__dark');
+    activePhoto.remove();
+    darkEl.remove();
+};
+
+// Обработка кликов по фото
+daysHTravelEl.addEventListener('click', ({ target }) => {
+    if (target.classList.contains('altai__horseTravel-day_photo')) {
+        getActivePhoto(target, horseTravelDays);
+    };
+
+    if (target.classList.contains('currentActive__close')) {
+        closeActivePhoto(target);
+    };
+});
 
 // Сплав на рафтах по Катуни, raftingKatun
 const raftingKatun =  `[
@@ -178,23 +236,39 @@ const raftingKatun =  `[
 ]`
 const raftingKatunPlaces = JSON.parse(raftingKatun);
 
-raftingKatunPlaces.forEach(place => {
+const placesRKatunEl = document.querySelector('.altai__raftingKatun-places');
 
-    const placesEl = document.querySelector('.altai__raftingKatun-places');
+raftingKatunPlaces.forEach(place => {
 
         const placeEl = document.createElement('div');
         placeEl.classList.add('altai__raftingKatun-place');
-        placesEl.append(placeEl);
+        placeEl.classList.add('widthBox');
+        placesRKatunEl.append(placeEl);
+
+        const placeLinkEl = document.createElement('a');
+        placeLinkEl.classList.add('altai__raftingKatun-place_link');
+        placeLinkEl.setAttribute('href', '#altai__raftingKatun-places');
+        placeEl.append(placeLinkEl);
 
         const placePhotoEl = document.createElement('img');
         placePhotoEl.classList.add('altai__raftingKatun-place_photo');
         placePhotoEl.src = place.Photo;
         placePhotoEl.setAttribute('alt', `photo-place${place.id}`);
-        placeEl.append(placePhotoEl);
+        placeLinkEl.append(placePhotoEl);
 
         const shortDescriptionEl = document.createElement('p');
         shortDescriptionEl.classList.add('altai__raftingKatun-place_shortDescription');
         shortDescriptionEl.textContent = place.ShortDescription;
         placeEl.append(shortDescriptionEl);
-
     });
+
+// Обработка кликов по фото
+placesRKatunEl.addEventListener('click', ({ target }) => {
+    if (target.classList.contains('altai__raftingKatun-place_photo')) {
+        getActivePhoto(target, raftingKatunPlaces);
+    };
+
+    if (target.classList.contains('currentActive__close')) {
+        closeActivePhoto(target);
+    };
+});
