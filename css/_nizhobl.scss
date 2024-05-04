@@ -2,14 +2,11 @@
 .nizhobl {
 
     &__main {
-        padding-top: $MainPaddingTop;
+        padding: $MainPaddingTop $MainPaddingRight $MainPaddingBottom $MainPaddingLeft;
         background: url(../images/solovkiMain.jpg) no-repeat;
-        height: 833px;
     }
 
     &__title {
-        padding-left: $MainPaddingLeft;
-        width: 50%;
         margin-bottom: 83px;
         color: rgb(33, 33, 33);
         font-family: $Montserrat;
@@ -21,9 +18,8 @@
     }
 
     &__text {
-        padding-left: $MainPaddingLeft;
         width: 80%;
-        margin-bottom: 100px;
+        margin-bottom: 32px;
         color: rgb(194, 183, 183);
         font-family: $Montserrat;
         font-size: 16px;
@@ -36,7 +32,6 @@
     &__my-travels {
         display: flex;
         gap: 15px;
-        padding-left: 50px;
     }
 
     &__travel {

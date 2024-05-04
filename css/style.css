@@ -18,13 +18,11 @@ p {
 }
 
 .altai__main {
-  padding-top: 50px;
+  padding: 50px 5px 50px 96px;
   background: url(../images/altai.jpg) no-repeat;
   height: 833px;
 }
 .altai__title {
-  padding-left: 96px;
-  width: 50%;
   margin-bottom: 83px;
   color: rgb(33, 33, 33);
   font-family: "Montserrat", sans-serif;
@@ -35,8 +33,7 @@ p {
   text-align: left;
 }
 .altai__text {
-  padding-left: 96px;
-  width: 50%;
+  width: 80%;
   margin-bottom: 32px;
   color: rgb(194, 183, 183);
   font-family: "Montserrat", sans-serif;
@@ -49,7 +46,6 @@ p {
 .altai__my-travels {
   display: flex;
   gap: 15px;
-  padding-left: 50px;
 }
 .altai__travel {
   width: 250px;
@@ -90,7 +86,9 @@ p {
 }
 .altai__horseTravel_title {
   padding-left: 96px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  padding-right: 5px;
+  margin-bottom: 0;
   color: rgb(33, 33, 33);
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
@@ -101,13 +99,14 @@ p {
 }
 .altai__horseTravel_text {
   padding-left: 96px;
+  padding-right: 5px;
   margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 1px;
-  text-align: left;
+  text-align: justify;
 }
 .altai__horseTravel-days {
   position: relative;
@@ -153,7 +152,9 @@ p {
 }
 .altai__raftingKatun_title {
   padding-left: 96px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  padding-right: 5px;
+  margin-bottom: 0;
   color: rgb(33, 33, 33);
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
@@ -164,13 +165,14 @@ p {
 }
 .altai__raftingKatun_text {
   padding-left: 96px;
+  padding-right: 5px;
   margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 1px;
-  text-align: left;
+  text-align: justify;
 }
 .altai__raftingKatun_videos {
   background: rgb(241, 241, 241);
@@ -212,13 +214,10 @@ p {
 }
 
 .karelia__main {
-  padding-top: 50px;
+  padding: 50px 5px 50px 96px;
   background: url(../images/kareliaTitul.jpg) no-repeat;
-  height: 833px;
 }
 .karelia__title {
-  padding-left: 96px;
-  width: 50%;
   margin-bottom: 83px;
   color: rgb(33, 33, 33);
   font-family: "Montserrat", sans-serif;
@@ -229,9 +228,8 @@ p {
   text-align: left;
 }
 .karelia__text {
-  padding-left: 96px;
   width: 80%;
-  margin-bottom: 100px;
+  margin-bottom: 32px;
   color: rgb(194, 183, 183);
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -243,7 +241,6 @@ p {
 .karelia__my-travels {
   display: flex;
   gap: 15px;
-  padding-left: 50px;
 }
 .karelia__travel {
   width: 250px;
@@ -284,7 +281,9 @@ p {
 }
 .karelia__splavChirkaKem_title {
   padding-left: 96px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  padding-right: 5px;
+  margin-bottom: 0;
   color: rgb(33, 33, 33);
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
@@ -295,13 +294,14 @@ p {
 }
 .karelia__splavChirkaKem_text {
   padding-left: 96px;
+  padding-right: 5px;
   margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 1px;
-  text-align: left;
+  text-align: justify;
 }
 .karelia__splavChirkaKem-days {
   position: relative;
@@ -347,7 +347,9 @@ p {
 }
 .karelia__kem_title {
   padding-left: 96px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  padding-right: 5px;
+  margin-bottom: 0;
   color: rgb(33, 33, 33);
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
@@ -358,13 +360,14 @@ p {
 }
 .karelia__kem_text {
   padding-left: 96px;
+  padding-right: 5px;
   margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 1px;
-  text-align: left;
+  text-align: justify;
 }
 .karelia__kem_videos {
   background: rgb(241, 241, 241);
@@ -406,13 +409,10 @@ p {
 }
 
 .solovki__main {
-  padding-top: 50px;
+  padding: 50px 5px 50px 96px;
   background: url(../images/solovkiMain.jpg) no-repeat;
-  height: 833px;
 }
 .solovki__title {
-  padding-left: 96px;
-  width: 50%;
   margin-bottom: 83px;
   color: rgb(33, 33, 33);
   font-family: "Montserrat", sans-serif;
@@ -423,9 +423,8 @@ p {
   text-align: left;
 }
 .solovki__text {
-  padding-left: 96px;
   width: 80%;
-  margin-bottom: 100px;
+  margin-bottom: 32px;
   color: rgb(194, 183, 183);
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -437,7 +436,6 @@ p {
 .solovki__my-travels {
   display: flex;
   gap: 15px;
-  padding-left: 50px;
 }
 .solovki__travel {
   width: 250px;
@@ -478,7 +476,9 @@ p {
 }
 .solovki__trip2023_title {
   padding-left: 96px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  padding-right: 5px;
+  margin-bottom: 0;
   color: rgb(33, 33, 33);
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
@@ -489,13 +489,14 @@ p {
 }
 .solovki__trip2023_text {
   padding-left: 96px;
+  padding-right: 5px;
   margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 1px;
-  text-align: left;
+  text-align: justify;
 }
 .solovki__trip2023-places {
   position: relative;
@@ -528,13 +529,10 @@ p {
 }
 
 .nizhobl__main {
-  padding-top: 50px;
+  padding: 50px 5px 50px 96px;
   background: url(../images/solovkiMain.jpg) no-repeat;
-  height: 833px;
 }
 .nizhobl__title {
-  padding-left: 96px;
-  width: 50%;
   margin-bottom: 83px;
   color: rgb(33, 33, 33);
   font-family: "Montserrat", sans-serif;
@@ -545,9 +543,8 @@ p {
   text-align: left;
 }
 .nizhobl__text {
-  padding-left: 96px;
   width: 80%;
-  margin-bottom: 100px;
+  margin-bottom: 32px;
   color: rgb(194, 183, 183);
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -559,7 +556,6 @@ p {
 .nizhobl__my-travels {
   display: flex;
   gap: 15px;
-  padding-left: 50px;
 }
 .nizhobl__travel {
   width: 250px;
@@ -597,6 +593,7 @@ p {
 }
 
 .currentActive {
+  max-width: 100%;
   position: absolute;
   top: 0;
   left: 50%;
@@ -775,6 +772,7 @@ p {
 .about__info {
   padding-top: 50px;
   padding-left: 96px;
+  padding-right: 5px;
 }
 .about__title {
   color: rgb(18, 18, 18);
@@ -808,6 +806,7 @@ p {
 .motivation {
   padding-top: 50px;
   padding-left: 96px;
+  padding-right: 5px;
 }
 .motivation__title {
   width: 90%;
@@ -869,12 +868,11 @@ p {
   .container {
     max-width: 100%;
   }
-  .widthBox {
-    max-width: 200px;
-  }
   .carousel {
-    right: 15%;
+    max-width: 100%;
+    left: 50%;
     bottom: 22px;
+    transform: translate(-50%);
   }
   .main__navigation {
     padding-top: 35px;
@@ -894,47 +892,448 @@ p {
   }
   .about__info {
     padding-top: 20px;
-    padding-left: 70px;
+    padding-left: 30px;
+    width: 50%;
   }
   .about__title {
     font-size: 42px;
     margin-bottom: 30px;
   }
+  .about__preview {
+    margin-bottom: 15px;
+  }
   .about__text {
     font-size: 20px;
   }
+  .about__photobox {
+    width: 50%;
+  }
+  .about__photo {
+    width: 100%;
+  }
   .motivation__title {
     margin-bottom: 30px;
-  }
-  .altai__text {
-    width: 80%;
   }
   .altai__my-travels {
     margin-top: 100px;
     padding-left: 96px;
   }
+  .altai__horseTravel-days {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   .altai__horseTravel_text {
     width: 95%;
+  }
+  .altai__raftingKatun-places {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
   }
   .altai__raftingKatun_text {
     width: 95%;
   }
+  .karelia__text {
+    margin-bottom: 30px;
+  }
   .karelia__my-travels {
     padding-left: 96px;
+  }
+  .karelia__splavChirkaKem-days {
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .karelia__splavChirkaKem_text {
     width: 95%;
   }
+  .karelia__kem-places {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
   .karelia__kem_text {
     width: 95%;
+  }
+  .solovki__text {
+    margin-bottom: 30px;
   }
   .solovki__my-travels {
     padding-left: 96px;
   }
+  .solovki__trip2023-places {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
   .solovki__trip2023_text {
     width: 95%;
   }
+  .nizhobl__text {
+    margin-bottom: 30px;
+  }
   .nizhobl__my-travels {
     padding-left: 96px;
+  }
+}
+@media (max-width: 768px) {
+  .main__text {
+    display: none;
+  }
+  .main__block {
+    padding-bottom: 340px;
+  }
+  .about__info {
+    padding-left: 20px;
+  }
+  .about__title {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 5px;
+  }
+  .about__preview {
+    line-height: 24px;
+    text-align: justify;
+    font-size: 16px;
+  }
+  .about__text {
+    font-size: 14px;
+  }
+  .motivation {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .altai__main {
+    padding-top: 20px;
+    height: 100%;
+    padding-bottom: 110px;
+  }
+  .altai__title {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .altai__text {
+    width: 95%;
+    padding-left: 20px;
+  }
+  .altai__horseTravel_title {
+    font-size: 32px;
+    line-height: 38px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .altai__horseTravel_text {
+    padding-left: 20px;
+    text-align: justify;
+  }
+  .altai__horseTravel-days {
+    grid-template-columns: 1fr 1fr;
+  }
+  .altai__raftingKatun_title {
+    font-size: 32px;
+    line-height: 38px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .altai__raftingKatun_text {
+    padding-left: 20px;
+    text-align: justify;
+  }
+  .karelia__main {
+    padding-top: 20px;
+    height: 100%;
+    padding-bottom: 110px;
+  }
+  .karelia__title {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .karelia__text {
+    width: 95%;
+    padding-left: 20px;
+  }
+  .karelia__splavChirkaKem_title {
+    font-size: 32px;
+    line-height: 38px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .karelia__splavChirkaKem_text {
+    padding-left: 20px;
+    text-align: justify;
+  }
+  .karelia__splavChirkaKem-days {
+    grid-template-columns: 1fr 1fr;
+  }
+  .karelia__kem_title {
+    font-size: 32px;
+    line-height: 38px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .karelia__kem_text {
+    padding-left: 20px;
+    text-align: justify;
+  }
+  .solovki__main {
+    padding-top: 20px;
+    height: 100%;
+    padding-bottom: 110px;
+  }
+  .solovki__title {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .solovki__text {
+    width: 95%;
+    padding-left: 20px;
+  }
+  .solovki__trip2023_title {
+    font-size: 32px;
+    line-height: 38px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .solovki__trip2023_text {
+    padding-left: 20px;
+    text-align: justify;
+  }
+  .nizhobl__main {
+    padding-top: 20px;
+    height: 100%;
+    padding-bottom: 110px;
+  }
+  .nizhobl__title {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .nizhobl__text {
+    width: 95%;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 430px) {
+  .about {
+    flex-direction: column-reverse;
+  }
+  .about__info {
+    width: 100%;
+    padding-left: 5px;
+  }
+  .about__title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .about__text {
+    text-align: justify;
+  }
+  .about__photobox {
+    width: 100%;
+  }
+  .motivation {
+    padding-left: 5px;
+  }
+  .motivation__title {
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .motivation__subtitle {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .motivation__point {
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+  .altai__main {
+    padding-right: 5px;
+  }
+  .altai__title {
+    width: 100%;
+    padding-left: 5px;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .altai__text {
+    width: 100%;
+    padding-left: 5px;
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .altai__my-travels {
+    margin-top: 50px;
+    padding-left: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .altai__horseTravel {
+    padding-top: 20px;
+    padding-right: 5px;
+  }
+  .altai__horseTravel_title {
+    padding-left: 5px;
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  .altai__horseTravel_text {
+    width: 100%;
+    padding-left: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .altai__horseTravel-days {
+    grid-template-columns: 1fr;
+  }
+  .altai__raftingKatun {
+    padding-top: 20px;
+    padding-right: 5px;
+  }
+  .altai__raftingKatun_title {
+    padding-left: 5px;
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  .altai__raftingKatun_text {
+    width: 100%;
+    padding-left: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .altai__raftingKatun-places {
+    justify-content: center;
+  }
+  .karelia__main {
+    padding-right: 5px;
+    padding-bottom: 11px;
+  }
+  .karelia__title {
+    width: 100%;
+    padding-left: 5px;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .karelia__text {
+    width: 100%;
+    padding-left: 5px;
+    text-align: justify;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .karelia__my-travels {
+    padding-left: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .karelia__splavChirkaKem {
+    padding-top: 20px;
+    padding-right: 5px;
+  }
+  .karelia__splavChirkaKem_title {
+    padding-left: 5px;
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  .karelia__splavChirkaKem_text {
+    width: 100%;
+    padding-left: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .karelia__splavChirkaKem-days {
+    grid-template-columns: 1fr;
+  }
+  .karelia__kem {
+    padding-top: 20px;
+    padding-right: 5px;
+  }
+  .karelia__kem_title {
+    padding-left: 5px;
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  .karelia__kem_text {
+    width: 100%;
+    padding-left: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .karelia__kem-places {
+    justify-content: center;
+  }
+  .solovki__main {
+    padding-right: 5px;
+    padding-bottom: 11px;
+  }
+  .solovki__title {
+    width: 100%;
+    padding-left: 5px;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .solovki__text {
+    width: 100%;
+    padding-left: 5px;
+    text-align: justify;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .solovki__my-travels {
+    padding-left: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .solovki__trip2023 {
+    padding-top: 20px;
+    padding-right: 5px;
+  }
+  .solovki__trip2023_title {
+    padding-left: 5px;
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  .solovki__trip2023_text {
+    width: 100%;
+    padding-left: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .solovki__trip2023-places {
+    justify-content: center;
+  }
+  .nizhobl__main {
+    padding-right: 5px;
+    padding-bottom: 11px;
+  }
+  .nizhobl__title {
+    width: 100%;
+    padding-left: 5px;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .nizhobl__text {
+    width: 100%;
+    padding-left: 5px;
+    text-align: justify;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .nizhobl__my-travels {
+    padding-left: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer {
+    padding: 10px 5px 10px 5px;
   }
 }/*# sourceMappingURL=style.css.map */
