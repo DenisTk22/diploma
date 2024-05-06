@@ -32,8 +32,8 @@
         right: 15px;
         border: 2px solid #fff;
         padding: 5px;
-        color: #fff;
-        background: none;
+        color: #000;
+        background: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -74,6 +74,39 @@
     width: 100%;
 }
 
+.burgerMenu {
+    position: absolute;
+    display: flex;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    padding: 10px 15px;
+    background: none;
+}
+
+.burgerMenuList {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+.burgerClose {
+        z-index: 5;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        border: 2px solid #000;
+        padding: 5px;
+        color: #000;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
 //карусель картинок на главной странице
 .pic-size {
     width: 100%;
@@ -100,11 +133,45 @@
     bottom: 1.25rem; //переопределение свойства
 }
 
+.toMainPage {
+    color: rgb(49, 49, 49);
+    font-family: $Lato;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.upMainPage {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 2px solid #000;
+    padding: 5px;
+    color: #000;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toMainPage:hover {
+    color: $linkColorHover;
+}
+
+
+
 //Главная страница
 .main {
     position: relative;
     width: 100%;
     background: url(../images/myMain.JPG) no-repeat;
+
+    &__burger {
+        display: none;
+    }
 
     &__navigation {
         padding-top: 45px;
@@ -210,6 +277,12 @@
         padding-right: 5px;
     }
 
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 83px;
+    }
+
     &__title {
         color: rgb(18, 18, 18);
         font-family: $Inter;
@@ -218,7 +291,7 @@
         line-height: 56px;
         text-align: left;
         letter-spacing: 1px;
-        margin-bottom: 83px;
+        margin-bottom: 0px;
     }
 
     &__preview {
@@ -248,9 +321,13 @@
     padding-left: $MainPaddingLeft;
     padding-right: 5px;
 
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 83px;
+    }
 
     &__title {
-        width: 90%;
         color: rgb(33, 27, 27);
         font-family: $Montserrat;
         font-size: 40px;
@@ -258,7 +335,6 @@
         line-height: 50px;
         letter-spacing: 1px;
         text-align: left;
-        margin-bottom: 83px;
     }
 
     &__subtitle {
@@ -294,10 +370,39 @@
 .footer {
     width: 100%;
     background: #000;
-    padding: 10px 50px 10px $MainPaddingLeft;
+    padding: 20px 50px 10px $MainPaddingLeft;
 
     &__nav {
         display: flex;
+        justify-content: space-between;
+
+        &_links {
+            margin-bottom: 0;
+        }
+
+        &_link {
+            color: $linkColor;
+        }
+
+        &_link:hover {
+            color: $linkColorHover;
+        }
+
+        &_contacts {
+            margin-bottom: 0;
+        }
+
+        &_contact {
+            color: $linkColor;
+        }
+
+        &_contact:hover {
+            color: $linkColorHover;
+        }
+
+        &_email {
+            color: $linkColor;
+        }
     }
 
     &__createdBy {
@@ -363,6 +468,10 @@
             width: 50%;
         }
 
+        &__nav {
+            margin-bottom: 0;
+        }
+
         &__title {
             font-size: 42px;
             margin-bottom: 30px;
@@ -386,6 +495,11 @@
     }
 
     .motivation {
+        padding-left: 20px;
+
+        &__nav {
+            margin-bottom: 0;
+        }
 
         &__title {
             margin-bottom: 30px;
@@ -394,22 +508,37 @@
 
     .altai {
 
+        &__main {
+            padding-left: 20px;
+        }
+
+        &__nav {
+            margin-bottom: 20px;
+        }
+
         &__text {
             // width: 80%;
         }
 
         &__my-travels {
             margin-top: 100px;
-            padding-left: 96px;
+            padding-left: 0;
         }
 
         &__horseTravel-days {
             grid-template-columns: 1fr 1fr 1fr;
         }
 
-
-        &__horseTravel_text {
-            width: 95%;
+        &__horseTravel {
+        
+            &_title {
+                padding-left: 20px;
+            }
+        
+            &_text {
+                padding-left: 20px;
+                width: 95%;
+            }
         }
 
         &__raftingKatun-places {
@@ -418,26 +547,44 @@
             gap: 25px;
         }
 
+        &__raftingKatun_title {
+            padding-left: 20px;
+        }
+
         &__raftingKatun_text {
+            padding-left: 20px;
             width: 95%;
         }
     }
 
     .karelia {
 
+        &__main {
+            padding-left: 20px;
+        }
+
+        &__nav {
+            margin-bottom: 20px;
+        }
+
         &__text {
             margin-bottom: 30px;
         }
 
         &__my-travels {
-            padding-left: 96px;
+            padding-left: 0px;
         }
 
         &__splavChirkaKem-days {
             grid-template-columns: 1fr 1fr 1fr;
         }
 
+        &__splavChirkaKem_title {
+            padding-left: 20px;
+        }
+
         &__splavChirkaKem_text {
+            padding-left: 20px;
             width: 95%;
         }
 
@@ -447,19 +594,32 @@
             gap: 25px;
         }
 
+        &__kem_title {
+            padding-left: 20px;
+        }
+
         &__kem_text {
+            padding-left: 20px;
             width: 95%;
         }
     }
 
     .solovki {
 
+        &__main {
+            padding-left: 20px;
+        }
+
+        &__nav {
+            margin-bottom: 20px;
+        }
+
         &__text {
             margin-bottom: 30px;
         }
 
         &__my-travels {
-            padding-left: 96px;
+            padding-left: 0px;
         }
 
         &__trip2023-places {
@@ -468,19 +628,32 @@
             gap: 25px;
         }
 
+        &__trip2023_title {
+            padding-left: 20px;
+        }
+
         &__trip2023_text {
+            padding-left: 20px;
             width: 95%;
         }
     }
 
     .nizhobl {
 
+        &__main {
+            padding-left: 20px;
+        }
+
+        &__nav {
+            margin-bottom: 20px;
+        }
+
         &__text {
             margin-bottom: 30px;
         }
 
         &__my-travels {
-            padding-left: 96px;
+            padding-left: 0px;
         }
     }
 }
@@ -489,11 +662,23 @@
 
     .main {
 
+        &__burger {
+            display: block;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+
+        &__navigation {
+            display: none;
+        }
+
         &__text {
             display: none;
         }
 
         &__block {
+            padding-top: 30px;
             padding-bottom: 340px;
         }
     }
@@ -511,13 +696,14 @@
         }
 
         &__preview {
-            line-height: 24px;
+            line-height: 18px;
             text-align: justify;
             font-size: 16px;
         }
 
         &__text {
             font-size: 14px;
+            line-height: 16px;
         }
     }
 

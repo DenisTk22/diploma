@@ -10,6 +10,7 @@
     <!-- bootstrap link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Стили css -->
+    <link rel="stylesheet" href="./css/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <!-- bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
@@ -18,6 +19,7 @@
     <script src="./scripts/karelia.js" defer></script>
     <script src="./scripts/solovki.js" defer></script>
     <script src="./scripts/nizhobl.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
 
     <title>My Travels</title>
 </head>
@@ -28,10 +30,11 @@
             <nav class="main__navigation">
                 <ul class="main__navigation_list">
                     <li><a class="main__navigation_item" href="#about">Обо мне</a></li>
-                    <li><a class="main__navigation_item" href="#">Контакты</a></li>
+                    <li><a class="main__navigation_item" href="#footer">Контакты</a></li>
                     <li><a class="main__navigation_item" href="#motivation">Мотивация</a></li>
                 </ul>
             </nav>
+            <div class="main__burger"><i class="fa-solid fa-bars fa-2xl burgerOpen"></i></div>
             <div class="main__block">
                 <div class="main__text">
                     <q class="main__text_quote">Жизнь – не те дни, что прошли, а те, что запомнились.</q> 
@@ -43,7 +46,7 @@
                     <li><a class="main__list_item main__list_item_hover" href="#altai">Алтай</a></li>
                     <li><a class="main__list_item main__list_item_hover" href="#karelia">Карелия</a></li>
                     <li><a class="main__list_item main__list_item_hover" href="#solovki">Соловки</a></li>
-                    <li><a class="main__list_item main__list_item_hover" href="#">Нижегородская область</a></li>
+                    <li><a class="main__list_item main__list_item_hover" href="#nizhobl">Нижегородская область</a></li>
                 </ul>
             </div>
             <!-- Слайдер карусель -->
@@ -96,7 +99,10 @@
         </main>
         <section id="about" class="about">
             <div class="about__info">
-              <h1 class="about__title">Обо мне</h1>
+              <div class="about__nav">
+                <h1 class="about__title">Обо мне</h1>
+                <a class="toMainPage" href="#main">На главную страницу</a>
+              </div>
               <h4 class="about__preview">Меня зовут Денис Ткачёв, я живу в Нижнем Новгороде. Я люблю путешествовать. И не важно нужно ли для этого куда-то лететь или просто выйти на улицу. Для меня, прогулку в своем городе тоже можно превратить в петешествие - разработать маршрут, взять термос с любимым напитком, подпопник и вперед!<br> <span>Путешествие начинается, когда вы закрываете за собой дверь.<span></h4>
               <p class="about__text">Цель данного сайти мотивировать людей на приключения, показать что приключения вокруг нас. А также объединить людей в поисках приключений. Общаясь с людьми, я понял, что тех, кто хотел бы пойти в поход одного дня или на несколько дней, очень много. Порой не хватеат мотивации, времени, но чаще всего не хватате компании, с кем можно было бы пойти куда глаза глядят. Вместе всегда веселей и надежнее. </p>
             </div>
@@ -105,7 +111,10 @@
             </div>
         </section>
         <section id="motivation" class="motivation">
-            <p class="motivation__title">Мотивация</p>
+            <div class="motivation__nav">
+              <p class="motivation__title">Мотивация</p>
+              <a class="toMainPage" href="#main">На главную страницу</a>
+            </div>
             <p class="motivation__subtitle">Что меня вдохновляет ...</p>
             <p class="motivation__point">Это <span class="motivation__point_bold">открытия</span>, возможность открывать мир вокруг себя, даже прогулка пешком по тем местам, где ты кадый день проезжаешь на автомобиле или в автобусе, позволяет тебе открыть эти места заново.</p>
             <p class="motivation__point">Это <span class="motivation__point_bold">осознание</span> того что мир вокруг нас очень огромен. Находясь в тысячах километрах от своего дома, ты понимаешь на сколько огромна страна, в которой ты живешь, на сколько огромен и уникален наш мир.</p>
@@ -114,7 +123,10 @@
         </section>
         <section id="altai" class="altai">
             <div class="altai__main">
-              <p class="altai__title">Алтай</p>
+              <div class="altai__nav">
+                <p class="altai__title">Алтай</p>
+                <a class="toMainPage" href="#main">На главную страницу</a>
+              </div>
               <p class="altai__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, consequatur assumenda saepe voluptatem repellendus nemo dignissimos tenetur vel ea aut esse quis cumque. Perferendis error exercitationem saepe, rerum dolor quos!</p>
               <p class="altai__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laudantium harum hic! Exercitationem, iure dolorum, incidunt suscipit voluptatem vero est totam expedita ut ea excepturi veniam nam officia laudantium corrupti.</p>
               <div class="altai__my-travels">
@@ -164,7 +176,10 @@
         </section>
         <section id="karelia" class="karelia">
           <div class="karelia__main">
-            <p class="karelia__title">Карелия</p>
+            <div class="karelia__nav">
+              <p class="karelia__title">Карелия</p>
+              <a class="toMainPage" href="#main">На главную страницу</a>
+            </div>
             <p class="karelia__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium deserunt repellendus, odio vel eaque earum iste blanditiis omnis velit! Corrupti blanditiis tenetur exercitationem autem cum consequatur explicabo velit sunt, excepturi reprehenderit quod sapiente, itaque voluptatibus! Deleniti cupiditate, porro eaque adipisci esse dolore maiores rerum dolorum fugiat distinctio tenetur soluta.
             </p>
             <div class="karelia__my-travels">
@@ -209,7 +224,10 @@
         </section>
         <section id="solovki" class="solovki">
           <div class="solovki__main">
-            <p class="solovki__title">Соловки</p>
+            <div class="solovki__nav">
+              <p class="solovki__title">Соловки</p>
+              <a class="toMainPage" href="#main">На главную страницу</a>
+            </div>
             <p class="solovki__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptas eius asperiores enim odit in cumque, magni rerum laborum soluta officiis accusamus vitae! Cumque, esse. Praesentium mollitia id magni amet expedita quasi ipsam est neque reprehenderit perferendis eos ab suscipit ullam reiciendis doloremque excepturi illum earum quo minus nisi, repellendus totam ipsum esse hic? Laboriosam magni dolorum explicabo excepturi nam quam mollitia amet sed enim sint dicta commodi, maiores est alias fugiat neque voluptate ipsum voluptas nulla molestias placeat dolores? Nostrum quos praesentium temporibus sint, doloremque non iste ipsum ipsam sapiente incidunt dolores veritatis voluptas, veniam aliquid cupiditate. Odit, beatae!</p>
             <div class="solovki__my-travels">
               <!-- блок формируется файлом solovki.js, solovkiTravels -->
@@ -237,32 +255,35 @@
           </div>
         </section>
         <section id="nizhobl" class="nizhobl">
-          <div class="nizhobl__main">
-            <p class="nizhobl__title">Нижегородская область</p>
-            <p class="nizhobl__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, consequatur assumenda saepe voluptatem repellendus nemo dignissimos tenetur vel ea aut esse quis cumque. Perferendis error exercitationem saepe, rerum dolor quos!</p>
-            <div class="nizhobl__my-travels">
-              <!-- блок формируется файлом nizhobl.js, nizhoblTravels -->
-              <!-- <div class="nizhobl__travel">
-                <p class="nizhobl__travel_name"></p>
-                <a href="#" class="nizhobl__travel_link">
-                  <img class="nizhobl__travel_photo" src="#" alt="travel">
-                </a>
-                <p class="nizhobl__travel_shortDescription"></p>
-              </div> -->
-            </div>
+            <div class="nizhobl__main">
+              <div class="nizhobl__nav">
+                <p class="nizhobl__title">Нижегородская область</p>
+                <a class="toMainPage" href="#main">На главную страницу</a>
+              </div>
+              <p class="nizhobl__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, consequatur assumenda saepe voluptatem repellendus nemo dignissimos tenetur vel ea aut esse quis cumque. Perferendis error exercitationem saepe, rerum dolor quos!</p>
+              <div class="nizhobl__my-travels">
+                <!-- блок формируется файлом nizhobl.js, nizhoblTravels -->
+                <!-- <div class="nizhobl__travel">
+                  <p class="nizhobl__travel_name"></p>
+                  <a href="#" class="nizhobl__travel_link">
+                    <img class="nizhobl__travel_photo" src="#" alt="travel">
+                  </a>
+                  <p class="nizhobl__travel_shortDescription"></p>
+                </div> -->
+              </div>
           </div>
         </section>
-        <footer class="footer">
+        <footer id="footer" class="footer">
           <nav class="footer__nav">
             <ul class="footer__nav_links" >
-              <li><a href="#main">На главную</a></li>
-              <li><a href="#about">Обо мне</a></li>
-              <li><a href="#motivation">Мотивация</a></li>
+              <li><a class="footer__nav_link" href="#main">На главную</a></li>
+              <li><a class="footer__nav_link" href="#about">Обо мне</a></li>
+              <li><a class="footer__nav_link" href="#motivation">Мотивация</a></li>
             </ul>
             <ul class="footer__nav_contacts">
-              <li><a target="_blank" href="https://t.me/+_K03Uly8P7A0MGI6">Мой канал в телеграм</a></li>
-              <li><a target="_blank" href="https://vk.com/dgsined">Моя страница Вконтакте</a></li>
-              <li>Моя почта: allpost-s@ya.ru</li>
+              <li><a class="footer__nav_contact" target="_blank" href="https://t.me/+_K03Uly8P7A0MGI6">Мой канал в телеграм</a></li>
+              <li><a class="footer__nav_contact" target="_blank" href="https://vk.com/dgsined">Моя страница Вконтакте</a></li>
+              <li class="footer__nav_email">Моя почта: allpost-s@ya.ru</li>
             </ul>
           </nav>
 

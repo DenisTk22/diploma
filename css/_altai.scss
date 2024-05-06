@@ -5,10 +5,17 @@
         padding: $MainPaddingTop $MainPaddingRight $MainPaddingBottom $MainPaddingLeft;
         background: url(../images/altai.jpg) no-repeat;
         height: 833px;
+        background-size: contain;
+        background-size: cover;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 83px;
     }
 
     &__title {
-        margin-bottom: 83px;
         color: rgb(33, 33, 33);
         font-family: $Montserrat;
         font-size: 40px;
