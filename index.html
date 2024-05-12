@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Lato:wght@300;400;500;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Lato:wght@300;400;500;700&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet">
     <!-- bootstrap link-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
     <!-- Стили css -->
     <link rel="stylesheet" href="./css/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <!-- bootstrap script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous" defer></script>
     <!-- script -->
     <script src="./scripts/altai.js" defer></script>
     <script src="./scripts/karelia.js" defer></script>
@@ -23,278 +32,465 @@
     <script src="./scripts/feedback.js" defer></script>
 
     <title>My Travels</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container center">
       <div class="content">
         <main id="main" class="main">
-            <nav class="main__navigation">
-                <ul class="main__navigation_list">
-                    <li><a class="main__navigation_item" href="#about">Обо мне</a></li>
-                    <li><a class="main__navigation_item" href="#footer">Контакты</a></li>
-                    <li><a class="main__navigation_item" href="#motivation">Мотивация</a></li>
-                </ul>
-            </nav>
-            <div class="main__burger"><i class="fa-solid fa-bars fa-2xl burgerOpen"></i></div>
-            <div class="main__block">
-                <div class="main__text">
-                    <q class="main__text_quote">Жизнь – не те дни, что прошли, а те, что запомнились.</q> 
-                    <p class="main__text_quote-auther">Габриэль Гарсиа Маркес.</p>
-                    <p class="main__text_sentence">Отправляясь в путешествие, вы открываете новую главу в своей жизни.</p>
-                </div>
-                <ul class="main__list">
-                    <li class="main__list_item">Мои путешествия:</li>
-                    <li><a class="main__list_item main__list_item_hover" href="#altai">Алтай</a></li>
-                    <li><a class="main__list_item main__list_item_hover" href="#karelia">Карелия</a></li>
-                    <li><a class="main__list_item main__list_item_hover" href="#solovki">Соловки</a></li>
-                    <li><a class="main__list_item main__list_item_hover" href="#nizhobl">Нижегородская область</a></li>
-                </ul>
+          <nav class="main__navigation">
+            <ul class="main__navigation_list">
+              <li><a class="main__navigation_item" href="#about">Обо
+                  мне</a></li>
+              <li><a class="main__navigation_item"
+                  href="#footer">Контакты</a></li>
+              <li><a class="main__navigation_item"
+                  href="#motivation">Мотивация</a></li>
+            </ul>
+          </nav>
+          <div class="main__burger"><i
+              class="fa-solid fa-bars fa-2xl burgerOpen"></i></div>
+          <div class="main__block">
+            <div class="main__text">
+              <q class="main__text_quote">Жизнь – не те дни, что прошли, а те,
+                что запомнились.</q>
+              <p class="main__text_quote-auther">Габриэль Гарсиа Маркес.</p>
+              <p class="main__text_sentence">Отправляясь в путешествие, вы
+                открываете новую главу в своей жизни.</p>
             </div>
-            <!-- Слайдер карусель -->
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <a href="#altai__horseTravel"><img src="./images/mainSlider1.JPG" class="d-block pic-size " alt="picture1"></a>
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>урочище Сугойна</h5>
-                      <p>Алтай</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="#altai__raftingKatun"><img src="./images/mainSlider2.jpg" class="d-block pic-size " alt="picture2"></a>
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>река Катунь</h5>
-                      <p>Алтай</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="#karelia__splavChirkaKem"><img src="./images/mainSlider3.JPG" class="d-block pic-size " alt="picture3"></a>
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>река Чирка-Кемь</h5>
-                      <p>Карелия</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="#solovki__trip2023"><img src="./images/solovki2023.jpg" class="d-block pic-size " alt="picture4"></a>
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Крепость из прибрежных камней</h5>
-                      <p>остров Соловки</p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+            <ul class="main__list">
+              <li class="main__list_item">Мои путешествия:</li>
+              <li><a class="main__list_item main__list_item_hover"
+                  href="#altai">Алтай</a></li>
+              <li><a class="main__list_item main__list_item_hover"
+                  href="#karelia">Карелия</a></li>
+              <li><a class="main__list_item main__list_item_hover"
+                  href="#solovki">Соловки</a></li>
+              <li><a class="main__list_item main__list_item_hover"
+                  href="#nizhobl">Нижегородская область</a></li>
+            </ul>
+          </div>
+          <!-- Слайдер карусель -->
+          <div id="carouselExampleCaptions" class="carousel slide"
+            data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="3" class="active" aria-current="true"
+                aria-label="Slide 4"></button>
             </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="#altai__horseTravel"><img
+                    src="./images/mainSlider1.JPG" class="d-block pic-size "
+                    alt="picture1"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>урочище Сугойна</h5>
+                  <p>Алтай</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="#altai__raftingKatun"><img
+                    src="./images/mainSlider2.jpg" class="d-block pic-size "
+                    alt="picture2"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>река Катунь</h5>
+                  <p>Алтай</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="#karelia__splavChirkaKem"><img
+                    src="./images/mainSlider3.JPG" class="d-block pic-size "
+                    alt="picture3"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>река Чирка-Кемь</h5>
+                  <p>Карелия</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="#solovki__trip2023"><img src="./images/solovki2023.jpg"
+                    class="d-block pic-size " alt="picture4"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Крепость из прибрежных камней</h5>
+                  <p>остров Соловки</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button"
+              data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button"
+              data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </main>
         <section id="about" class="about">
-            <div class="about__info">
-              <div class="about__nav">
-                <h1 class="about__title">Обо мне</h1>
-                <a class="toMainPage" href="#main">На главную страницу</a>
-              </div>
-              <h4 class="about__preview">Меня зовут Денис Ткачёв, я живу в Нижнем Новгороде. Я люблю путешествовать. И не важно нужно ли для этого куда-то лететь или просто выйти на улицу. Для меня, прогулку в своем городе тоже можно превратить в петешествие - разработать маршрут, взять термос с любимым напитком, подпопник и вперед!<br> <span>Путешествие начинается, когда вы закрываете за собой дверь.<span></h4>
-              <p class="about__text">Цель данного сайти мотивировать людей на приключения, показать что приключения вокруг нас. А также объединить людей в поисках приключений. Общаясь с людьми, я понял, что тех, кто хотел бы пойти в поход одного дня или на несколько дней, очень много. Порой не хватеат мотивации, времени, но чаще всего не хватате компании, с кем можно было бы пойти куда глаза глядят. Вместе всегда веселей и надежнее. </p>
-            </div>
-            <div class="about__photobox">
-              <img class="about__photo" src="./images/about.jpg" alt="myPhoto">
-            </div>
-        </section>
-        <section id="motivation" class="motivation">
-            <div class="motivation__nav">
-              <p class="motivation__title">Мотивация</p>
+          <div class="about__info">
+            <div class="about__nav">
+              <h1 class="about__title">Обо мне</h1>
               <a class="toMainPage" href="#main">На главную страницу</a>
             </div>
-            <p class="motivation__subtitle">Что меня вдохновляет ...</p>
-            <p class="motivation__point">Это <span class="motivation__point_bold">открытия</span>, возможность открывать мир вокруг себя, даже прогулка пешком по тем местам, где ты кадый день проезжаешь на автомобиле или в автобусе, позволяет тебе открыть эти места заново.</p>
-            <p class="motivation__point">Это <span class="motivation__point_bold">осознание</span> того что мир вокруг нас очень огромен. Находясь в тысячах километрах от своего дома, ты понимаешь на сколько огромна страна, в которой ты живешь, на сколько огромен и уникален наш мир.</p>
-            <p class="motivation__point">Это <span class="motivation__point_bold">движение</span>, постоянно находясь в движении, ты тренируешь свое тело и очищаешь разум. Ты начинаешь тренироваться сам, чтобы быть в тонусе, ты видишь результат и это вдохновляет тебя.</p>
-            <p class="motivation__point">Это <span class="motivation__point_bold">знакомство</span> с новыми людьми, в походах ты встречаешь и узнаешь новых людей. Ты находишь людей, близких тебе по духу и взглядам. Некоторые из них становятся твоими друзьями, он все они оставляют свой след в твоей жизни, а ты в их.</p>
-        </section>
-        <section id="altai" class="altai">
-            <div class="altai__main">
-              <div class="altai__nav">
-                <p class="altai__title">Алтай</p>
+            <h4 class="about__preview">Меня зовут Денис Ткачёв, я живу в Нижнем
+              Новгороде. Я люблю путешествовать. И не важно нужно ли для этого
+              куда-то лететь или просто выйти на улицу. Для меня, прогулку в
+              своем городе тоже можно превратить в петешествие - разработать
+              маршрут, взять термос с любимым напитком, подпопник и вперед!<br>
+              <span>Путешествие начинается, когда вы закрываете за собой
+                дверь.<span></h4>
+                <p class="about__text">Цель данного сайти мотивировать людей на
+                  приключения, показать что приключения вокруг нас. А также
+                  объединить людей в поисках приключений. Общаясь с людьми, я
+                  понял, что тех, кто хотел бы пойти в поход одного дня или на
+                  несколько дней, очень много. Порой не хватеат мотивации,
+                  времени, но чаще всего не хватате компании, с кем можно было
+                  бы пойти куда глаза глядят. Вместе всегда веселей и надежнее.
+                </p>
+              </div>
+              <div class="about__photobox">
+                <img class="about__photo" src="./images/about.jpg"
+                  alt="myPhoto">
+              </div>
+            </section>
+            <section id="motivation" class="motivation">
+              <div class="motivation__nav">
+                <p class="motivation__title">Мотивация</p>
                 <a class="toMainPage" href="#main">На главную страницу</a>
               </div>
-              <p class="altai__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, consequatur assumenda saepe voluptatem repellendus nemo dignissimos tenetur vel ea aut esse quis cumque. Perferendis error exercitationem saepe, rerum dolor quos!</p>
-              <p class="altai__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laudantium harum hic! Exercitationem, iure dolorum, incidunt suscipit voluptatem vero est totam expedita ut ea excepturi veniam nam officia laudantium corrupti.</p>
-              <div class="altai__my-travels">
-                <!-- блок формируется файлом altai.js, altaiTravels -->
-                <!-- <div class="altai__travel">
+              <p class="motivation__subtitle">Что меня вдохновляет ...</p>
+              <p class="motivation__point">Это <span
+                  class="motivation__point_bold">открытия</span>, возможность
+                открывать мир вокруг себя, даже прогулка пешком по тем местам,
+                где ты кадый день проезжаешь на автомобиле или в автобусе,
+                позволяет тебе открыть эти места заново.</p>
+              <p class="motivation__point">Это <span
+                  class="motivation__point_bold">осознание</span> того что мир
+                вокруг нас очень огромен. Находясь в тысячах километрах от
+                своего дома, ты понимаешь на сколько огромна страна, в которой
+                ты живешь, на сколько огромен и уникален наш мир.</p>
+              <p class="motivation__point">Это <span
+                  class="motivation__point_bold">движение</span>, постоянно
+                находясь в движении, ты тренируешь свое тело и очищаешь разум.
+                Ты начинаешь тренироваться сам, чтобы быть в тонусе, ты видишь
+                результат и это вдохновляет тебя.</p>
+              <p class="motivation__point">Это <span
+                  class="motivation__point_bold">знакомство</span> с новыми
+                людьми, в походах ты встречаешь и узнаешь новых людей. Ты
+                находишь людей, близких тебе по духу и взглядам. Некоторые из
+                них становятся твоими друзьями, он все они оставляют свой след в
+                твоей жизни, а ты в их.</p>
+            </section>
+            <section id="altai" class="altai">
+              <div class="altai__main">
+                <div class="altai__nav">
+                  <p class="altai__title">Алтай</p>
+                  <a class="toMainPage" href="#main">На главную страницу</a>
+                </div>
+                <p class="altai__text">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Voluptatibus, consequatur assumenda saepe
+                  voluptatem repellendus nemo dignissimos tenetur vel ea aut
+                  esse quis cumque. Perferendis error exercitationem saepe,
+                  rerum dolor quos!</p>
+                <p class="altai__text">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Tempora laudantium harum hic!
+                  Exercitationem, iure dolorum, incidunt suscipit voluptatem
+                  vero est totam expedita ut ea excepturi veniam nam officia
+                  laudantium corrupti.</p>
+                <div class="altai__my-travels">
+                  <!-- блок формируется файлом altai.js, altaiTravels -->
+                  <!-- <div class="altai__travel">
                   <p class="altai__travel_name"></p>
                   <a href="#" class="altai__travel_link">
                     <img class="altai__travel_photo" src="#" alt="travel">
                   </a>
                   <p class="altai__travel_shortDescription"></p>
                 </div> -->
+                </div>
               </div>
-            </div>
-            <div id="altai__horseTravel" class="altai__horseTravel">
-              <h2 class="altai__horseTravel_title">Конный поход, Алтай, июль - август 2022 год</h2>
-              <p class="altai__horseTravel_text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum architecto, tenetur, ullam esse eum obcaecati nesciunt laboriosam velit doloremque cum quaerat exercitationem quibusdam laudantium omnis explicabo blanditiis voluptate perferendis nisi. Consectetur pariatur asperiores, esse quos iste debitis, error labore quo culpa beatae numquam, animi saepe sed obcaecati veritatis excepturi explicabo sequi totam magni? Molestiae dolorum delectus id corporis aliquam consequatur nisi aperiam tenetur laudantium asperiores, dolore nostrum accusantium magni iusto vitae voluptate beatae doloremque officia qui. Vero neque iure corrupti vitae illo magni laboriosam quae earum dolores, quo natus, perferendis placeat saepe distinctio laborum error expedita. Laudantium id delectus nemo.
-              </p>
-              <div id="altai__horseTravel-days" class="altai__horseTravel-days">
-            <!-- блок формируется файлом altai.js, horseTravel -->  
-              <!-- <div class="altai__horseTravel-day widthBox">
+              <div id="altai__horseTravel"
+                class="altai__horseTravel stayYourFeedback">
+                <h2 class="altai__horseTravel_title">Конный поход, Алтай, июль -
+                  август 2022 год</h2>
+                <p class="altai__horseTravel_text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Harum architecto, tenetur, ullam esse eum obcaecati nesciunt
+                  laboriosam velit doloremque cum quaerat exercitationem
+                  quibusdam laudantium omnis explicabo blanditiis voluptate
+                  perferendis nisi. Consectetur pariatur asperiores, esse quos
+                  iste debitis, error labore quo culpa beatae numquam, animi
+                  saepe sed obcaecati veritatis excepturi explicabo sequi totam
+                  magni? Molestiae dolorum delectus id corporis aliquam
+                  consequatur nisi aperiam tenetur laudantium asperiores, dolore
+                  nostrum accusantium magni iusto vitae voluptate beatae
+                  doloremque officia qui. Vero neque iure corrupti vitae illo
+                  magni laboriosam quae earum dolores, quo natus, perferendis
+                  placeat saepe distinctio laborum error expedita. Laudantium id
+                  delectus nemo.
+                </p>
+                <div id="altai__horseTravel-days"
+                  class="altai__horseTravel-days">
+                  <!-- блок формируется файлом altai.js, horseTravel -->
+                  <!-- <div class="altai__horseTravel-day widthBox">
                 <p class="altai__horseTravel-day_number">День 1</p>
                 <img src="#" alt="photo-day1" class="altai__horseTravel-day_photo">
                 <p class="altai__horseTravel-day_location"></p>
                 <p class="altai__horseTravel-day_shortDescription"></p>
               </div> -->
-              </div>
-              <form action="#feedbackTravel" id="feedbackTravel" class="feedbackTravel">
-                <input class="feedbackTravel__feedback" type="text" placeholder="Добавьте отзыв" required>
-                <button class="feedbackTravel__saveFeedback">Добавить отзыв</button>
-            </form>
-            </div>
-            <div id="altai__raftingKatun" class="altai__raftingKatun">
-              <h2 class="altai__raftingKatun_title">Сплав на рафтах, река Катунь, август 2022 год</h2>
-              <p class="altai__raftingKatun_text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum architecto, tenetur, ullam esse eum obcaecati nesciunt laboriosam velit doloremque cum quaerat exercitationem quibusdam laudantium omnis explicabo blanditiis voluptate perferendis nisi. Consectetur pariatur asperiores, esse quos iste debitis, error labore quo culpa beatae numquam, animi saepe sed obcaecati veritatis excepturi explicabo sequi totam magni? Molestiae dolorum delectus id corporis aliquam consequatur nisi aperiam tenetur laudantium asperiores, dolore nostrum accusantium magni iusto vitae voluptate beatae doloremque officia qui. Vero neque iure corrupti vitae illo magni laboriosam quae earum dolores, quo natus, perferendis placeat saepe distinctio laborum error expedita. Laudantium id delectus nemo.
-              </p>
-              <div class="altai__raftingKatun_videos">
-                <div class="altai__raftingKatun_video1">
-                  <!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/jZ8gJ49GYcE" title="katun, 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe> -->
                 </div>
+                <form action="#" class="feedbackTravel">
+                  <input class="feedbackTravel__feedback" type="text"
+                    placeholder="Добавьте отзыв" required>
+                  <button class="feedbackTravel__saveFeedback">Добавить
+                    отзыв</button>
+                  <button disabled class="feedbackTravel__showFeedbacks">Скрыть
+                    отзывы</button>
+                </form>
+                <ul class="feedbackTravel__listFeedback"></ul>
               </div>
-              <div id="altai__raftingKatun-places" class="altai__raftingKatun-places">
-                <!-- блок формируется файлом altai.js, raftingKatun -->  
-              <!-- <div class="altai__raftingKatun-place">
+              <div id="altai__raftingKatun"
+                class="altai__raftingKatun stayYourFeedback">
+                <h2 class="altai__raftingKatun_title">Сплав на рафтах, река
+                  Катунь, август 2022 год</h2>
+                <p class="altai__raftingKatun_text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Harum architecto, tenetur, ullam esse eum obcaecati nesciunt
+                  laboriosam velit doloremque cum quaerat exercitationem
+                  quibusdam laudantium omnis explicabo blanditiis voluptate
+                  perferendis nisi. Consectetur pariatur asperiores, esse quos
+                  iste debitis, error labore quo culpa beatae numquam, animi
+                  saepe sed obcaecati veritatis excepturi explicabo sequi totam
+                  magni? Molestiae dolorum delectus id corporis aliquam
+                  consequatur nisi aperiam tenetur laudantium asperiores, dolore
+                  nostrum accusantium magni iusto vitae voluptate beatae
+                  doloremque officia qui. Vero neque iure corrupti vitae illo
+                  magni laboriosam quae earum dolores, quo natus, perferendis
+                  placeat saepe distinctio laborum error expedita. Laudantium id
+                  delectus nemo.
+                </p>
+                <div class="altai__raftingKatun_videos">
+                  <div class="altai__raftingKatun_video1">
+                    <!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/jZ8gJ49GYcE" title="katun, 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe> -->
+                  </div>
+                </div>
+                <div id="altai__raftingKatun-places"
+                  class="altai__raftingKatun-places">
+                  <!-- блок формируется файлом altai.js, raftingKatun -->
+                  <!-- <div class="altai__raftingKatun-place">
                 <img src="#" alt="photo1" class="altai__raftingKatun-place_photo">
                 <p class="altai__raftingKatun-place_shortDescription"></p>
               </div> -->
+                </div>
+                <form action="#" class="feedbackTravel">
+                  <input class="feedbackTravel__feedback" type="text"
+                    placeholder="Добавьте отзыв" required>
+                  <button class="feedbackTravel__saveFeedback">Добавить
+                    отзыв</button>
+                  <button disabled class="feedbackTravel__showFeedbacks">Скрыть
+                    отзывы</button>
+                </form>
+                <ul class="feedbackTravel__listFeedback"></ul>
               </div>
-            </div>
-        </section>
-        <section id="karelia" class="karelia">
-          <div class="karelia__main">
-            <div class="karelia__nav">
-              <p class="karelia__title">Карелия</p>
-              <a class="toMainPage" href="#main">На главную страницу</a>
-            </div>
-            <p class="karelia__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium deserunt repellendus, odio vel eaque earum iste blanditiis omnis velit! Corrupti blanditiis tenetur exercitationem autem cum consequatur explicabo velit sunt, excepturi reprehenderit quod sapiente, itaque voluptatibus! Deleniti cupiditate, porro eaque adipisci esse dolore maiores rerum dolorum fugiat distinctio tenetur soluta.
-            </p>
-            <div class="karelia__my-travels">
-              <!-- блок формируется файлом karelia.js, kareliaTravels -->
-                <!-- <div class="karelia__travel">
+            </section>
+            <section id="karelia" class="karelia">
+              <div class="karelia__main">
+                <div class="karelia__nav">
+                  <p class="karelia__title">Карелия</p>
+                  <a class="toMainPage" href="#main">На главную страницу</a>
+                </div>
+                <p class="karelia__text">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Corporis praesentium deserunt repellendus,
+                  odio vel eaque earum iste blanditiis omnis velit! Corrupti
+                  blanditiis tenetur exercitationem autem cum consequatur
+                  explicabo velit sunt, excepturi reprehenderit quod sapiente,
+                  itaque voluptatibus! Deleniti cupiditate, porro eaque adipisci
+                  esse dolore maiores rerum dolorum fugiat distinctio tenetur
+                  soluta.
+                </p>
+                <div class="karelia__my-travels">
+                  <!-- блок формируется файлом karelia.js, kareliaTravels -->
+                  <!-- <div class="karelia__travel">
                   <p class="karelia__travel_name"></p>
                   <a href="#" class="karelia__travel_link">
                     <img class="karelia__travel_photo" src="#" alt="travel">
                   </a>
                   <p class="karelia__travel_shortDescription"></p>
                 </div> -->
-            </div>
-          </div>
-          <div id="karelia__splavChirkaKem" class="karelia__splavChirkaKem">
-              <h2 class="karelia__splavChirkaKem_title">Сплав на байдарках, река Чирка-Кемь, август 2023 год</h2>
-              <p class="karelia__splavChirkaKem_text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum architecto, tenetur, ullam esse eum obcaecati nesciunt laboriosam velit doloremque cum quaerat exercitationem quibusdam laudantium omnis explicabo blanditiis voluptate perferendis nisi. Consectetur pariatur asperiores, esse quos iste debitis, error labore quo culpa beatae numquam, animi saepe sed obcaecati veritatis excepturi explicabo sequi totam magni? Molestiae dolorum delectus id corporis aliquam consequatur nisi aperiam tenetur laudantium asperiores, dolore nostrum accusantium magni iusto vitae voluptate beatae doloremque officia qui. Vero neque iure corrupti vitae illo magni laboriosam quae earum dolores, quo natus, perferendis placeat saepe distinctio laborum error expedita. Laudantium id delectus nemo.
-              </p>
-              <div id="karelia__splavChirkaKem-days" class="karelia__splavChirkaKem-days">
-            <!-- блок формируется файлом karelia.js, splavChirkaKem -->  
-              <!-- <div class="karelia__splavChirkaKem-day">
+                </div>
+              </div>
+              <div id="karelia__splavChirkaKem"
+                class="karelia__splavChirkaKem stayYourFeedback">
+                <h2 class="karelia__splavChirkaKem_title">Сплав на байдарках,
+                  река Чирка-Кемь, август 2023 год</h2>
+                <p class="karelia__splavChirkaKem_text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Harum architecto, tenetur, ullam esse eum obcaecati nesciunt
+                  laboriosam velit doloremque cum quaerat exercitationem
+                  quibusdam laudantium omnis explicabo blanditiis voluptate
+                  perferendis nisi. Consectetur pariatur asperiores, esse quos
+                  iste debitis, error labore quo culpa beatae numquam, animi
+                  saepe sed obcaecati veritatis excepturi explicabo sequi totam
+                  magni? Molestiae dolorum delectus id corporis aliquam
+                  consequatur nisi aperiam tenetur laudantium asperiores, dolore
+                  nostrum accusantium magni iusto vitae voluptate beatae
+                  doloremque officia qui. Vero neque iure corrupti vitae illo
+                  magni laboriosam quae earum dolores, quo natus, perferendis
+                  placeat saepe distinctio laborum error expedita. Laudantium id
+                  delectus nemo.
+                </p>
+                <div id="karelia__splavChirkaKem-days"
+                  class="karelia__splavChirkaKem-days">
+                  <!-- блок формируется файлом karelia.js, splavChirkaKem -->
+                  <!-- <div class="karelia__splavChirkaKem-day">
                 <p class="karelia__splavChirkaKem-day_number">День 1</p>
                 <img src="#" alt="photo-day1" class="karelia__splavChirkaKem-day_photo">
                 <p class="karelia__splavChirkaKem-day_location"></p>
                 <p class="karelia__splavChirkaKem-day_shortDescription"></p>
               </div> -->
+                </div>
               </div>
-          </div>
-          <div id="karelia__kem" class="karelia__kem">
-            <h2 class="karelia__kem_title">городок Кемь</h2>
-              <p class="karelia__kem_text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum architecto, tenetur, ullam esse eum obcaecati nesciunt laboriosam velit doloremque cum quaerat exercitationem quibusdam laudantium omnis explicabo blanditiis voluptate perferendis nisi. Consectetur pariatur asperiores, esse quos iste debitis, error labore quo culpa beatae numquam, animi saepe sed obcaecati veritatis excepturi explicabo sequi totam magni? Molestiae dolorum delectus id corporis aliquam consequatur nisi aperiam tenetur laudantium asperiores, dolore nostrum accusantium magni iusto vitae voluptate beatae doloremque officia qui. Vero neque iure corrupti vitae illo magni laboriosam quae earum dolores, quo natus, perferendis placeat saepe distinctio laborum error expedita. Laudantium id delectus nemo.
-              </p>
-              <div id="karelia__kem-places" class="karelia__kem-places">
-                <!-- блок формируется файлом karelia.js, kem -->  
-              <!-- <div class="karelia__kem-place">
+              <div id="karelia__kem" class="karelia__kem stayYourFeedback">
+                <h2 class="karelia__kem_title">городок Кемь</h2>
+                <p class="karelia__kem_text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Harum architecto, tenetur, ullam esse eum obcaecati nesciunt
+                  laboriosam velit doloremque cum quaerat exercitationem
+                  quibusdam laudantium omnis explicabo blanditiis voluptate
+                  perferendis nisi. Consectetur pariatur asperiores, esse quos
+                  iste debitis, error labore quo culpa beatae numquam, animi
+                  saepe sed obcaecati veritatis excepturi explicabo sequi totam
+                  magni? Molestiae dolorum delectus id corporis aliquam
+                  consequatur nisi aperiam tenetur laudantium asperiores, dolore
+                  nostrum accusantium magni iusto vitae voluptate beatae
+                  doloremque officia qui. Vero neque iure corrupti vitae illo
+                  magni laboriosam quae earum dolores, quo natus, perferendis
+                  placeat saepe distinctio laborum error expedita. Laudantium id
+                  delectus nemo.
+                </p>
+                <div id="karelia__kem-places" class="karelia__kem-places">
+                  <!-- блок формируется файлом karelia.js, kem -->
+                  <!-- <div class="karelia__kem-place">
                 <img src="#" alt="photo1" class="karelia__kem-place_photo">
                 <p class="karelia__kem-place_shortDescription"></p>
               </div> -->
+                </div>
               </div>
-          </div>
-        </section>
-        <section id="solovki" class="solovki">
-          <div class="solovki__main">
-            <div class="solovki__nav">
-              <p class="solovki__title">Соловки</p>
-              <a class="toMainPage" href="#main">На главную страницу</a>
-            </div>
-            <p class="solovki__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptas eius asperiores enim odit in cumque, magni rerum laborum soluta officiis accusamus vitae! Cumque, esse. Praesentium mollitia id magni amet expedita quasi ipsam est neque reprehenderit perferendis eos ab suscipit ullam reiciendis doloremque excepturi illum earum quo minus nisi, repellendus totam ipsum esse hic? Laboriosam magni dolorum explicabo excepturi nam quam mollitia amet sed enim sint dicta commodi, maiores est alias fugiat neque voluptate ipsum voluptas nulla molestias placeat dolores? Nostrum quos praesentium temporibus sint, doloremque non iste ipsum ipsam sapiente incidunt dolores veritatis voluptas, veniam aliquid cupiditate. Odit, beatae!</p>
-            <div class="solovki__my-travels">
-              <!-- блок формируется файлом solovki.js, solovkiTravels -->
-                <!-- <div class="solovki__travel">
+            </section>
+            <section id="solovki" class="solovki">
+              <div class="solovki__main">
+                <div class="solovki__nav">
+                  <p class="solovki__title">Соловки</p>
+                  <a class="toMainPage" href="#main">На главную страницу</a>
+                </div>
+                <p class="solovki__text">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Officia voluptas eius asperiores enim odit
+                  in cumque, magni rerum laborum soluta officiis accusamus
+                  vitae! Cumque, esse. Praesentium mollitia id magni amet
+                  expedita quasi ipsam est neque reprehenderit perferendis eos
+                  ab suscipit ullam reiciendis doloremque excepturi illum earum
+                  quo minus nisi, repellendus totam ipsum esse hic? Laboriosam
+                  magni dolorum explicabo excepturi nam quam mollitia amet sed
+                  enim sint dicta commodi, maiores est alias fugiat neque
+                  voluptate ipsum voluptas nulla molestias placeat dolores?
+                  Nostrum quos praesentium temporibus sint, doloremque non iste
+                  ipsum ipsam sapiente incidunt dolores veritatis voluptas,
+                  veniam aliquid cupiditate. Odit, beatae!</p>
+                <div class="solovki__my-travels">
+                  <!-- блок формируется файлом solovki.js, solovkiTravels -->
+                  <!-- <div class="solovki__travel">
                   <p class="solovki__travel_name"></p>
                   <a href="#" class="solovki__travel_link">
                     <img class="solovki__travel_photo" src="#" alt="travel">
                   </a>
                   <p class="solovki__travel_shortDescription"></p>
                 </div> -->
-            </div>
-          </div>
-          <div id="solovki__trip2023" class="solovki__trip2023">
-            <h2 class="solovki__trip2023_title">Остров Соловки, 2023 год</h2>
-            <p class="solovki__trip2023_text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum architecto, tenetur, ullam esse eum obcaecati nesciunt laboriosam velit doloremque cum quaerat exercitationem quibusdam laudantium omnis explicabo blanditiis voluptate perferendis nisi. Consectetur pariatur asperiores, esse quos iste debitis, error labore quo culpa beatae numquam, animi saepe sed obcaecati veritatis excepturi explicabo sequi totam magni? Molestiae dolorum delectus id corporis aliquam consequatur nisi aperiam tenetur laudantium asperiores, dolore nostrum accusantium magni iusto vitae voluptate beatae doloremque officia qui. Vero neque iure corrupti vitae illo magni laboriosam quae earum dolores, quo natus, perferendis placeat saepe distinctio laborum error expedita. Laudantium id delectus nemo.
-            </p>
-            <div id="solovki__trip2023-places" class="solovki__trip2023-places">
-                <!-- блок формируется файлом solovki.js, solovki -->  
-              <!-- <div class="solovki__trip2023-place">
+                </div>
+              </div>
+              <div id="solovki__trip2023"
+                class="solovki__trip2023 stayYourFeedback">
+                <h2 class="solovki__trip2023_title">Остров Соловки, 2023
+                  год</h2>
+                <p class="solovki__trip2023_text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Harum architecto, tenetur, ullam esse eum obcaecati nesciunt
+                  laboriosam velit doloremque cum quaerat exercitationem
+                  quibusdam laudantium omnis explicabo blanditiis voluptate
+                  perferendis nisi. Consectetur pariatur asperiores, esse quos
+                  iste debitis, error labore quo culpa beatae numquam, animi
+                  saepe sed obcaecati veritatis excepturi explicabo sequi totam
+                  magni? Molestiae dolorum delectus id corporis aliquam
+                  consequatur nisi aperiam tenetur laudantium asperiores, dolore
+                  nostrum accusantium magni iusto vitae voluptate beatae
+                  doloremque officia qui. Vero neque iure corrupti vitae illo
+                  magni laboriosam quae earum dolores, quo natus, perferendis
+                  placeat saepe distinctio laborum error expedita. Laudantium id
+                  delectus nemo.
+                </p>
+                <div id="solovki__trip2023-places"
+                  class="solovki__trip2023-places">
+                  <!-- блок формируется файлом solovki.js, solovki -->
+                  <!-- <div class="solovki__trip2023-place">
                 <img src="#" alt="photo1" class="solovki__trip2023-place_photo">
                 <p class="solovki__trip2023-place_shortDescription"></p>
               </div> -->
-            </div>
-          </div>
-        </section>
-        <section id="nizhobl" class="nizhobl">
-            <div class="nizhobl__main">
-              <div class="nizhobl__nav">
-                <p class="nizhobl__title">Нижегородская область</p>
-                <a class="toMainPage" href="#main">На главную страницу</a>
+                </div>
               </div>
-              <p class="nizhobl__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, consequatur assumenda saepe voluptatem repellendus nemo dignissimos tenetur vel ea aut esse quis cumque. Perferendis error exercitationem saepe, rerum dolor quos!</p>
-              <div class="nizhobl__my-travels">
-                <!-- блок формируется файлом nizhobl.js, nizhoblTravels -->
-                <!-- <div class="nizhobl__travel">
+            </section>
+            <section id="nizhobl" class="nizhobl">
+              <div class="nizhobl__main">
+                <div class="nizhobl__nav">
+                  <p class="nizhobl__title">Нижегородская область</p>
+                  <a class="toMainPage" href="#main">На главную страницу</a>
+                </div>
+                <p class="nizhobl__text">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Voluptatibus, consequatur assumenda saepe
+                  voluptatem repellendus nemo dignissimos tenetur vel ea aut
+                  esse quis cumque. Perferendis error exercitationem saepe,
+                  rerum dolor quos!</p>
+                <div class="nizhobl__my-travels">
+                  <!-- блок формируется файлом nizhobl.js, nizhoblTravels -->
+                  <!-- <div class="nizhobl__travel">
                   <p class="nizhobl__travel_name"></p>
                   <a href="#" class="nizhobl__travel_link">
                     <img class="nizhobl__travel_photo" src="#" alt="travel">
                   </a>
                   <p class="nizhobl__travel_shortDescription"></p>
                 </div> -->
+                </div>
               </div>
-          </div>
-        </section>
-        <footer id="footer" class="footer">
-          <nav class="footer__nav">
-            <ul class="footer__nav_links" >
-              <li><a class="footer__nav_link" href="#main">На главную</a></li>
-              <li><a class="footer__nav_link" href="#about">Обо мне</a></li>
-              <li><a class="footer__nav_link" href="#motivation">Мотивация</a></li>
-            </ul>
-            <ul class="footer__nav_contacts">
-              <li><a class="footer__nav_contact" target="_blank" href="https://t.me/+_K03Uly8P7A0MGI6">Мой канал в телеграм</a></li>
-              <li><a class="footer__nav_contact" target="_blank" href="https://vk.com/dgsined">Моя страница Вконтакте</a></li>
-              <li class="footer__nav_email">Моя почта: allpost-s@ya.ru</li>
-            </ul>
-          </nav>
+            </section>
+            <footer id="footer" class="footer">
+              <nav class="footer__nav">
+                <ul class="footer__nav_links">
+                  <li><a class="footer__nav_link" href="#main">На
+                      главную</a></li>
+                  <li><a class="footer__nav_link" href="#about">Обо мне</a></li>
+                  <li><a class="footer__nav_link"
+                      href="#motivation">Мотивация</a></li>
+                </ul>
+                <ul class="footer__nav_contacts">
+                  <li><a class="footer__nav_contact" target="_blank"
+                      href="https://t.me/+_K03Uly8P7A0MGI6">Мой канал в
+                      телеграм</a></li>
+                  <li><a class="footer__nav_contact" target="_blank"
+                      href="https://vk.com/dgsined">Моя страница
+                      Вконтакте</a></li>
+                  <li class="footer__nav_email">Моя почта: allpost-s@ya.ru</li>
+                </ul>
+              </nav>
 
-          <p class="footer__createdBy">2024 год</p>
-        </footer>
-    </div>
-    </div>
-</body>
-</html>
+              <p class="footer__createdBy">2024 год</p>
+            </footer>
+          </div>
+        </div>
+      </body>
+    </html>
