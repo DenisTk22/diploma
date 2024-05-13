@@ -612,6 +612,124 @@ p {
   letter-spacing: 1px;
 }
 
+.feedbackTravel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.feedbackTravel__feedback {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.feedbackTravel__saveFeedback {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.feedbackTravel__saveFeedback:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(5, 159, 197);
+  border-radius: 10rem;
+  z-index: -2;
+}
+.feedbackTravel__saveFeedback:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #03637a;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.feedbackTravel__saveFeedback:hover {
+  color: #fff;
+}
+.feedbackTravel__saveFeedback:hover:before {
+  width: 100%;
+}
+.feedbackTravel__showFeedbacks {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.feedbackTravel__showFeedbacks:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(5, 159, 197);
+  border-radius: 10rem;
+  z-index: -2;
+}
+.feedbackTravel__showFeedbacks:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #03637a;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.feedbackTravel__showFeedbacks:hover {
+  color: #fff;
+}
+.feedbackTravel__showFeedbacks:hover:before {
+  width: 100%;
+}
+.feedbackTravel__listFeedback {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.feedbackTravel__removeFeedback {
+  background: none;
+  border: none;
+  padding: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.feedbackTravel__editFeedback {
+  background: none;
+  border: none;
+  padding: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .currentActive {
   max-width: 100%;
   position: absolute;
@@ -1288,6 +1406,9 @@ p {
   }
 }
 @media (max-width: 430px) {
+  .feedbackTravel {
+    flex-direction: column;
+  }
   .about {
     flex-direction: column-reverse;
   }

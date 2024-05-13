@@ -1,7 +1,7 @@
 /**
  * Работа с отзывами
  */
-localStorage.clear();
+// localStorage.clear();
 const travelsLsKey = 'travels';
 
 // const travelNameEl = document.querySelector('.altai__horseTravel');
@@ -36,11 +36,15 @@ const showFeedbacks = () => {
                     const showFeedbackButton = travelName.querySelector('.feedbackTravel__showFeedbacks');
                     showFeedbackButton.disabled = false;
                     showFeedbackButton.textContent = 'Показать отзывы';
-                } else {
-                    emptyFeedbacks(travelName);
-                }
+                } 
             });
         })
+    }
+    else {
+        traveslNameEl.forEach(el => {
+            const travelName = el;
+        emptyFeedbacks(travelName);
+    })
     }
 }
 
@@ -70,17 +74,17 @@ const renderFeedBacks = (travel) => {
                 listEl.append(feedbackEl);
 
                 removeFeedbackEl.classList.add('feedbackTravel__removeFeedback');
-                removeFeedbackEl.textContent = 'Удалить отзыв';
+                removeFeedbackEl.textContent = `Удалить`;
                 feedbackEl.append(removeFeedbackEl);
 
                 editFeedbackEl.classList.add('feedbackTravel__editFeedback');
-                editFeedbackEl.textContent = 'Редактировать отзыв';
+                editFeedbackEl.textContent = `Изменить`;
                 feedbackEl.append(editFeedbackEl);
             });
         }
-        if (!presentFeedbacks) {
-            emptyFeedbacks(parent);
-        }
+        // if (!presentFeedbacks) {
+        //     emptyFeedbacks(parent);
+        // }
     });
 }
 
@@ -127,7 +131,6 @@ contentEl.addEventListener('click', (e) => { //saveFeedbackEl
                 });   
                 let present = false;
 
-
                 travelsFeedbacks.forEach((el) => {
                     if (el[travel]) {
                         present = true;
@@ -145,37 +148,39 @@ contentEl.addEventListener('click', (e) => { //saveFeedbackEl
             }
             renderFeedBacks(travel);
         }
+        // renderFeedBacks(travel);
         travelFeedbackField.value = '';
     }
 });
 
 // вывод отзывов на страницу и скрытие отзывов со страницы
-showFeedbackEl.addEventListener('click', (e) => {
+contentEl.addEventListener('click', (e) => {
     e.preventDefault();
-    countOfClicks++;
-
-    if (countOfClicks % 2 === 0) {
-        showFeedbackEl.textContent = 'Скрыть отзывы';
-        if (localStorage.getItem(travelsLsKey) !== null) {
-            // const travel = travelNameEl.id;
-            const travel = e.target.parentElement.parentElement.id;
-            renderFeedBacks(travel);
+    if (e.target.classList.contains('feedbackTravel__showFeedbacks')) {
+        const parent = e.target.parentElement.parentElement;
+        const listEl = parent.querySelector('.feedbackTravel__listFeedback');
+            countOfClicks++;
+        if (countOfClicks % 2 === 0) {
+            e.target.textContent = 'Скрыть отзывы';
+            if (localStorage.getItem(travelsLsKey) !== null) {
+                const travel = e.target.parentElement.parentElement.id;
+                renderFeedBacks(travel);
+            }
+            // else {
+            //     emptyFeedbacks();
+            // }
+        } else {
+            listEl.innerHTML = ""; // удаление списка предыдущих отзывов
+            e.target.textContent = 'Показать отзывы';
         }
-        else {
-            emptyFeedbacks();
-        }
-    } else {
-        listFeedbacks.innerHTML = ""; // удаление списка предыдущих отзывов
-        showFeedbackEl.textContent = 'Показать отзывы';
-    }
+    }   
 });
 
 //удаление отзыва
-listFeedbacks.addEventListener('click', (e) => {
+contentEl.addEventListener('click', (e) => {
     e.preventDefault();
     if (e.target.classList.contains('feedbackTravel__removeFeedback')) {
         const id = Number(e.target.parentElement.getAttribute('data-local-id'));
-        // const travel = travelNameEl.id;
         const travel = e.target.parentElement.parentElement.parentElement.id;
         let withoutDeletedFeedback = [];
         const travelsFeedbacks = []; //массив для всех отзывов по всем путешествиям
@@ -203,11 +208,10 @@ listFeedbacks.addEventListener('click', (e) => {
 });
 
 //редактирвание отзыва
-listFeedbacks.addEventListener('click', (e) => {
+contentEl.addEventListener('click', (e) => {
     e.preventDefault();
     if (e.target.classList.contains('feedbackTravel__editFeedback')) {
         const id = Number(e.target.parentElement.getAttribute('data-local-id'));
-        // const travel = travelNameEl.id;
         const travel = e.target.parentElement.parentElement.parentElement.id;
         let withEditedFeedback = [];
         const travelsFeedbacks = []; //массив для всех отзывов по всем путешествиям
