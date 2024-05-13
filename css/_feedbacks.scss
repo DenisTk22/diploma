@@ -1,0 +1,125 @@
+
+.feedbackTravel {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__feedback {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    &__saveFeedback {
+        display: inline-block;
+        padding: .5rem 1rem;
+        border-radius: 10rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1rem;
+        transition: all .3s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgb(5, 159, 197);
+          border-radius: 10rem;
+          z-index: -2;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0%;
+          height: 100%;
+          background-color: darken(rgb(5, 159, 197), 15%);
+          transition: all .3s;
+          border-radius: 10rem;
+          z-index: -1;
+        }
+        &:hover {
+          color: #fff;
+          &:before {
+            width: 100%;
+          }
+        }
+    }
+
+    &__showFeedbacks {
+        display: inline-block;
+        padding: .5rem 1rem;
+        border-radius: 10rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1rem;
+        transition: all .3s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgb(5, 159, 197);
+          border-radius: 10rem;
+          z-index: -2;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0%;
+          height: 100%;
+          background-color: darken(rgb(5, 159, 197), 15%);
+          transition: all .3s;
+          border-radius: 10rem;
+          z-index: -1;
+        }
+        &:hover {
+          color: #fff;
+          &:before {
+            width: 100%;
+          }
+        }
+    }
+
+    &__listFeedback {
+        font-family: $Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+        font-style: italic;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+
+    &__removeFeedback {
+        background: none;
+        border: none;
+        padding: 3px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    &__editFeedback {
+        background: none;
+        border: none;
+        padding: 3px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
