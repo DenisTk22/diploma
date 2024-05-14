@@ -56,7 +56,6 @@ const emptyFeedbacks = (parent) => {
 }
 
 const renderFeedBacks = (travel) => {
-
     const parent = document.getElementById(`${travel}`);
     const listEl = parent.querySelector('.feedbackTravel__listFeedback');
     listEl.innerHTML = ""; // удаление списка предыдущих отзывов
@@ -74,11 +73,11 @@ const renderFeedBacks = (travel) => {
                 listEl.append(feedbackEl);
 
                 removeFeedbackEl.classList.add('feedbackTravel__removeFeedback');
-                removeFeedbackEl.textContent = `Удалить`;
+                removeFeedbackEl.textContent = `удалить`;
                 feedbackEl.append(removeFeedbackEl);
 
                 editFeedbackEl.classList.add('feedbackTravel__editFeedback');
-                editFeedbackEl.textContent = `Изменить`;
+                editFeedbackEl.textContent = `изменить`;
                 feedbackEl.append(editFeedbackEl);
             });
         }
@@ -93,20 +92,16 @@ showFeedbacks();
 
 // Добавление отзыва
 contentEl.addEventListener('click', (e) => { //saveFeedbackEl
-    e.preventDefault();
     if (e.target.classList.contains('feedbackTravel__saveFeedback')) {
+        e.preventDefault();
         const travel = e.target.parentElement.parentElement.id;
-
         const travelName = e.target.parentElement.parentElement;
         const travelFeedbackField = travelName.querySelector('.feedbackTravel__feedback');
 
         if (travelFeedbackField.value !== '') {
-
             const feedback = travelFeedbackField.value;
-
             const showFeedbackButton = travelName.querySelector('.feedbackTravel__showFeedbacks');
             showFeedbackButton.disabled = false;
-
 
             if (!localStorage.getItem(travelsLsKey)) {
                 const travelsFeedbacks = []; //массив для всех отзывов по всем путешествиям
@@ -121,7 +116,6 @@ contentEl.addEventListener('click', (e) => { //saveFeedbackEl
             }
             
             else {
-
                 const travelsFeedbacks = []; //массив для всех отзывов по всем путешествиям
                 const feedbacks = []; // массив отзывов по конкретному путешествию
                 let travelFeedbacks = {}; // объект: путешествие, значение массив отзывов (feedbacks)
@@ -155,8 +149,8 @@ contentEl.addEventListener('click', (e) => { //saveFeedbackEl
 
 // вывод отзывов на страницу и скрытие отзывов со страницы
 contentEl.addEventListener('click', (e) => {
-    e.preventDefault();
     if (e.target.classList.contains('feedbackTravel__showFeedbacks')) {
+        e.preventDefault();
         const parent = e.target.parentElement.parentElement;
         const listEl = parent.querySelector('.feedbackTravel__listFeedback');
             countOfClicks++;
@@ -178,8 +172,8 @@ contentEl.addEventListener('click', (e) => {
 
 //удаление отзыва
 contentEl.addEventListener('click', (e) => {
-    e.preventDefault();
     if (e.target.classList.contains('feedbackTravel__removeFeedback')) {
+        e.preventDefault();
         const id = Number(e.target.parentElement.getAttribute('data-local-id'));
         const travel = e.target.parentElement.parentElement.parentElement.id;
         let withoutDeletedFeedback = [];
@@ -209,8 +203,8 @@ contentEl.addEventListener('click', (e) => {
 
 //редактирвание отзыва
 contentEl.addEventListener('click', (e) => {
-    e.preventDefault();
     if (e.target.classList.contains('feedbackTravel__editFeedback')) {
+        e.preventDefault();
         const id = Number(e.target.parentElement.getAttribute('data-local-id'));
         const travel = e.target.parentElement.parentElement.parentElement.id;
         let withEditedFeedback = [];

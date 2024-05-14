@@ -707,6 +707,9 @@ p {
   width: 100%;
 }
 .feedbackTravel__listFeedback {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -716,18 +719,93 @@ p {
   text-align: left;
 }
 .feedbackTravel__removeFeedback {
-  background: none;
   border: none;
-  padding: 3px;
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
   margin-left: 5px;
   margin-right: 5px;
 }
+.feedbackTravel__removeFeedback:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1a6703;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.feedbackTravel__removeFeedback:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #144e02;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.feedbackTravel__removeFeedback:hover {
+  color: #fff;
+}
+.feedbackTravel__removeFeedback:hover:before {
+  width: 100%;
+}
 .feedbackTravel__editFeedback {
-  background: none;
-  border: none;
-  padding: 3px;
+  background: #1a6703;
+  border: 1px solid #1a6703;
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
   margin-left: 5px;
   margin-right: 5px;
+}
+.feedbackTravel__editFeedback:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1a6703;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.feedbackTravel__editFeedback:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #144e02;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.feedbackTravel__editFeedback:hover {
+  color: #fff;
+}
+.feedbackTravel__editFeedback:hover:before {
+  width: 100%;
 }
 
 .currentActive {
