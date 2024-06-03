@@ -58,7 +58,7 @@ const splavChirkaKem = `[
         "Photo": "./images/karelia1.jpg",
         "Location": "урочище Андронова Гора",
         "ShortDescription": "Наша отправная точка, собираем катамараны.",
-        "Description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum architecto, tenetur, ullam esse eum obcaecati nesciunt laboriosam velit doloremque cum quaerat exercitationem quibusdam laudantium omnis explicabo blanditiis voluptate perferendis nisi. Consectetur pariatur asperiores, esse quos iste debitis, error labore quo culpa beatae numquam, animi"
+        "Description": "Здесь мы переночевали в палатках и на утро собрали наши катамараны, чтобы выдвинуться в новое путешествие."
     },
     {
         "id": "2",
@@ -66,7 +66,7 @@ const splavChirkaKem = `[
         "Photo": "./images/2karelia.jpg",
         "Location": "порог Хаудо",
         "ShortDescription": "Порог 2 категории сложности, был адреналин.",
-        "Description": "lorem50"
+        "Description": "Было много спокойной воды, но встречались и такие пороги что заставляли собраться и крепче взяться за весла."
     },
     {
         "id": "3",
@@ -74,7 +74,7 @@ const splavChirkaKem = `[
         "Photo": "./images/3karelia.jpg",
         "Location": "Сегодня было поспокойнее",
         "ShortDescription": "Приключения продолжаются, снова баллоны под попой).",
-        "Description": "lorem50"
+        "Description": "С погодой снова повезло, было тепло и солнечно. Впереди водная гладь в руках весла, под ногами метры темной глубины..."
     },
     {
         "id": "4",
@@ -82,7 +82,7 @@ const splavChirkaKem = `[
         "Photo": "./images/4karelia.jpg",
         "Location": "Дневка",
         "ShortDescription": "Сегодня дневка, можно отдохнуть и никуда не торопиться.",
-        "Description": "lorem50"
+        "Description": "Как же приятно подольше поваляться в палатке, сегодня некуда торопиться, можно побродить по живопиному лесу и посидеть у костра."
     },
     {
         "id": "5",
@@ -90,7 +90,7 @@ const splavChirkaKem = `[
         "Photo": "./images/5karelia.jpg",
         "Location": "Снова на воду!",
         "ShortDescription": "Подкачали баллоны, взяли весла и погребли.",
-        "Description": "lorem50"
+        "Description": "Снова ветерок в лицо, море воды и новые виды этой красивой природы."
     },
     {
         "id": "6",
@@ -98,7 +98,7 @@ const splavChirkaKem = `[
         "Photo": "./images/6karelia.jpg",
         "Location": "Приключение подходит к концу",
         "ShortDescription": "Еще несколько порогов и финальная стоянка.",
-        "Description": "lorem50"
+        "Description": "Огромное небо отражается в огромном водном просторе, какже все-таки красива и удивительна наша планета!"
     },
     {
         "id": "7",
@@ -106,7 +106,7 @@ const splavChirkaKem = `[
         "Photo": "./images/7karelia.jpg",
         "Location": "День отбытия, немного грустно",
         "ShortDescription": "Вот и закончилось это замечательное приключение, хочется все повторить!",
-        "Description": "lorem50"
+        "Description": "Это была потрясающая неделя, многожество впечатлений и красивых пейзажей. Очень хочется сюда вернуться снова и вновь погрузиться в эту безмятежную и красивейшую природу!"
     }
 ]`
 const splavChirkaKemDays = JSON.parse(splavChirkaKem);
