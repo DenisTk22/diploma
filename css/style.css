@@ -544,74 +544,6 @@ p {
   letter-spacing: 1px;
 }
 
-.nizhobl__main {
-  padding: 50px 5px 50px 96px;
-  background: url(../images/solovkiMain.jpg) no-repeat;
-}
-.nizhobl__nav {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 83px;
-}
-.nizhobl__title {
-  color: rgb(33, 33, 33);
-  font-family: "Montserrat", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 50px;
-  letter-spacing: 1px;
-  text-align: left;
-}
-.nizhobl__text {
-  width: 80%;
-  margin-bottom: 32px;
-  color: rgb(194, 183, 183);
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 1px;
-  text-align: left;
-}
-.nizhobl__my-travels {
-  display: flex;
-  gap: 15px;
-}
-.nizhobl__travel {
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.nizhobl__travel_name {
-  z-index: 1;
-  margin-bottom: -25px;
-  color: rgb(194, 183, 183);
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 1px;
-}
-.nizhobl__travel_photo {
-  width: 100%;
-  border: 2px solid rgb(39, 85, 83);
-  border-radius: 0 0 50% 50%;
-}
-.nizhobl__travel_photo:hover {
-  border: 2px solid rgb(89, 187, 182);
-}
-.nizhobl__travel_shortDescription {
-  width: 95%;
-  text-align: center;
-  color: rgb(194, 183, 183);
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 1px;
-}
-
 .feedbackTravel {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -823,6 +755,9 @@ p {
 }
 .currentActive__description {
   color: #000;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .currentActive__close {
   width: 30px;

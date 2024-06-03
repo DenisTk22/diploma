@@ -204,27 +204,21 @@ daysEl.addEventListener('click', ({ target }) => {
 const kem = `[
     {
         "id": "1",
-        "Photo": "./images/katun1.jpg",
-        "ShortDescription": "Вот такие виды нас ждали.",
-        "Description": "lorem50"
+        "Photo": "./images/kem1.jpg",
+        "ShortDescription": "Кемь встретила нас дождиком.",
+        "Description": "Будто не довольная тем, что мы нарушили её покой, Кемь встретила нас дождиком."
     },
     {
         "id": "2",
-        "Photo": "./images/katun2.jpg",
-        "ShortDescription": "Наш рафт выдержал все испытания.",
-        "Description": "lorem50"
+        "Photo": "./images/kem2.jpg",
+        "ShortDescription": "Кемь без прекрас живописна и по своему красива.",
+        "Description": "Одно из преимущест путешествия это видеть мир таким, какой он есть, без прекрас и фильтров."
     },
     {
         "id": "3",
-        "Photo": "./images/katun3.jpg",
-        "ShortDescription": "Река показывала нам свой нрав и горы.",
-        "Description": "lorem50"
-    },
-    {
-        "id": "4",
-        "Photo": "./images/katun4.jpg",
-        "ShortDescription": "Наша неутомимая каманда!",
-        "Description": "lorem50"
+        "Photo": "./images/kem3.jpg",
+        "ShortDescription": "Вот тут такая архитектура",
+        "Description": "В России еще много городков, попадая в которые, проваливаешься в прошлое, во что-то далекое и манящее."
     }
 ]`
 const kemPlaces = JSON.parse(kem);
