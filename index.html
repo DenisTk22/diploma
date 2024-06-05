@@ -471,8 +471,9 @@
                 <ul class="feedbackTravel__listFeedback"></ul>
               </div>
             </section>
+            <!-- Footer сделан на React -->
             <footer id="footer" class="footer">
-              <nav class="footer__nav">
+              <!-- <nav class="footer__nav">
                 <ul class="footer__nav_links">
                   <li><a class="footer__nav_link" href="#main">На
                       главную</a></li>
@@ -489,10 +490,20 @@
                       Вконтакте</a></li>
                   <li class="footer__nav_email">Моя почта: allpost-s@ya.ru</li>
                 </ul>
-              </nav>
+              </nav> -->
 
-              <p class="footer__createdBy">2024 год</p>
+              <!-- <p class="footer__createdBy">2024 год</p> -->
             </footer>
+
+                <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+                <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+                <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>    
+
+                <script type="text/babel" src="./scripts/Footer.js"></script>
+
+                <script type="text/babel">
+                    ReactDOM.render(<Footer />, document.querySelector('#footer'));
+                </script>
           </div>
         </div>
       </body>
