@@ -222,7 +222,6 @@ contentEl.addEventListener('click', (e) => {
                 });
             }
         });
-
         JSON.parse(localStorage.getItem(travelsLsKey)).forEach(el => {
             travelsFeedbacks.push(el);
         });
@@ -232,7 +231,6 @@ contentEl.addEventListener('click', (e) => {
                 el[travel] = withEditedFeedback; // добавляем в объект путешествие с массивом отзывов
             }
         });
-
         setToLocalStorage(travelsFeedbacks);
         renderFeedBacks(travel);
     }

@@ -1,6 +1,5 @@
 const breakpoint = window.matchMedia("(max-width: 768px)");
 
-
 const breakpointChecker = () => {
    if (breakpoint.matches) {
       const toManePageAll = document.querySelectorAll('.toMainPage');
@@ -21,8 +20,6 @@ const mainEl = document.querySelector('.main')
 const burgerEl = mainEl.querySelector('.main__burger');
 const mainNavListEl = mainEl.querySelector('.main__navigation_list');
 const burgerMenuEl = document.createElement('div');
-
-
 
 const getBurgerMenu = ({target}) => {
 
