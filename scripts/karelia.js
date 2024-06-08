@@ -10,7 +10,7 @@ const kareliaTravels = `[
     {
         "id": "2",
         "TravelName": "город Кемь",
-        "Photo": "./images/1suguina.JPG",
+        "Photo": "./images/kem1.jpg",
         "Link": "#karelia__kem",
         "ShortDescription": "Небольшой городок Кемь расположен на берегу Белого моря."
     }
