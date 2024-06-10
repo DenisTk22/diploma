@@ -15,24 +15,14 @@
     }
 
     &__title {
-        color: rgb(33, 33, 33);
-        font-family: $MainFont;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 50px;
-        letter-spacing: 1px;
+        @include textStyle (rgb(33, 33, 33), $MainFont, 1px, 40px, 700, 50px);
         text-align: left;
     }
 
     &__text {
         width: 80%;
         margin-bottom: 32px;
-        color: $textColor;
-        font-family: $MainFont;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 24px;
-        letter-spacing: 1px;
+        @include textStyle ($textColor, $MainFont, 1px, 16px, 700, 24px);
         text-align: left;
         @extend .testBackGround;
     }
@@ -51,12 +41,7 @@
         &_name {
             z-index: 1;
             margin-bottom: -25px;
-            color: rgb(194, 183, 183);
-            font-family: $MainFont;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 1px;
+            @include textStyle (rgb(194, 183, 183), $MainFont, 1px, 16px, 400, 24px);
         }
 
         &_photo {
@@ -72,12 +57,7 @@
         &_shortDescription {
             width: 95%;
             text-align: center;
-            color: rgb(194, 183, 183);
-            font-family: $MainFont;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 1px;
+            @include textStyle (rgb(194, 183, 183), $MainFont, 1px, 16px, 400, 24px);
         }
     }
 
@@ -90,12 +70,7 @@
             padding-right: $MainPaddingRight;
             margin-bottom: 0;
 
-            color: rgb(33, 33, 33);
-            font-family: $MainFont;
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 50px;
-            letter-spacing: 1px;
+            @include textStyle (rgb(33, 33, 33), $MainFont, 1px, 40px, 700, 50px);
             text-align: center;
         }
 
@@ -104,11 +79,7 @@
             padding-right: $MainPaddingRight;
             margin-bottom: 30px;
 
-            font-family: $MainFont;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 1px;
+            @include textStyle (rgb(33, 33, 33), $MainFont, 1px, 16px, 400, 24px);
             text-align: justify;
         }
     }
@@ -134,12 +105,7 @@
         align-items: center;
         background: #fff;
 
-        color: rgb(49, 49, 49);
-        font-family: $MainFont;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 1px;
+        @include textStyle (rgb(49, 49, 49), $MainFont, 1px, 16px, 400, 24px);
         text-align: center;
 
         &_photo {
@@ -169,12 +135,7 @@
             padding-right: $MainPaddingRight;
             margin-bottom: 0;
 
-            color: rgb(33, 33, 33);
-            font-family: $MainFont;
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 50px;
-            letter-spacing: 1px;
+            @include textStyle (rgb(33, 33, 33), $MainFont, 1px, 40px, 700, 50px);
             text-align: center;
         }
 
@@ -183,11 +144,7 @@
             padding-right: $MainPaddingRight;
             margin-bottom: 30px;
 
-            font-family: $MainFont;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 1px;
+            @include textStyle (rgb(33, 33, 33), $MainFont, 1px, 16px, 400, 24px);
             text-align: justify;
         }
 
@@ -230,12 +187,7 @@
             text-align: center;
             padding: 5px;
 
-            color: rgb(49, 49, 49);
-            font-family: $MainFont;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 1px;
+            @include textStyle (rgb(49, 49, 49), $MainFont, 1px, 16px, 400, 24px);
         }
     }
 }

@@ -293,35 +293,18 @@
 
     &__title {
         @include textStyle (rgb(18, 18, 18), $InfoFont, 1px, 48px, 700, 56px);
-        // color: rgb(18, 18, 18);
-        // font-family: $InfoFont;
-        // font-size: 48px;
-        // font-weight: 700;
-        // line-height: 56px;
         text-align: left;
-        // letter-spacing: 1px;
         margin-bottom: 0px;
     }
 
     &__preview {
         @include textStyle (rgb(49, 49, 49), $LinkFont, 1px, 24px, 400, 32px);
-        // color: rgb(49, 49, 49);
-        // font-family: $LinkFont;
-        // letter-spacing: 1px;
-        // font-weight: 400;
-        // line-height: 32px;
         text-align: left;
         margin-bottom: 35px;
     }
 
     &__text {
         @include textStyle (rgb(49, 49, 49), $LinkFont, 1px, 24px, 400, 24px);
-        // color: rgb(49, 49, 49);
-        // font-family: $LinkFont;
-        // letter-spacing: 1px;
-        // font-size: 24px;
-        // font-weight: 400;
-        // line-height: 24px;
         text-align: left;
     }
 }
@@ -340,24 +323,12 @@
 
     &__title {
         @include textStyle (rgb(33, 27, 27), $MainFont, 1px, 40px, 700, 50px);
-        // color: rgb(33, 27, 27);
-        // font-family: $MainFont;
-        // font-size: 40px;
-        // font-weight: 700;
-        // line-height: 50px;
-        // letter-spacing: 1px;
         text-align: left;
     }
 
     &__subtitle {
         width: 90%;
         @include textStyle (rgb(49, 49, 49), $MainFont, 1px, 24px, 400, 32px);
-        // color: rgb(49, 49, 49);
-        // font-family: $MainFont;
-        // font-size: 24px;
-        // font-weight: 400;
-        // line-height: 32px;
-        // letter-spacing: 1px;
         text-align: left;
         margin-bottom: 35px;
     }
@@ -366,12 +337,6 @@
         width: 90%;
         margin-bottom: 32px;
         @include textStyle (rgb(49, 49, 49), $MainFont, 1px, 16px, 400, 24px);
-        // color: rgb(49, 49, 49);
-        // font-family: $MainFont;
-        // font-size: 16px;
-        // font-weight: 400;
-        // line-height: 24px;
-        // letter-spacing: 1px;
         text-align: left;
 
         &_bold {
@@ -421,12 +386,6 @@
 
     &__createdBy {
         @include textStyle (rgb(49, 49, 49), $MainFont, 1px, 16px, 400, 32px);
-        // color: rgb(49, 49, 49);
-        // font-family: $MainFont;
-        // font-size: 16px;
-        // font-weight: 400;
-        // line-height: 32px;
-        // letter-spacing: 1px;
         text-align: left;
         text-align: right;
     }
