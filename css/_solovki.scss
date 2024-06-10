@@ -4,6 +4,8 @@
     &__main {
         padding: $MainPaddingTop $MainPaddingRight $MainPaddingBottom $MainPaddingLeft;
         background: url(../images/solovkiMain.jpg) no-repeat;
+        background-size: contain;
+        background-size: cover;
     }
 
     &__nav {

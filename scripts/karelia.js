@@ -49,7 +49,6 @@ kareliaTravelsData.forEach(travel => {
 
 });
 
-
 // Дни сплава на байдарках, splavChirkaKem
 const splavChirkaKem = `[
     {
