@@ -25,13 +25,14 @@
     &__text {
         width: 80%;
         margin-bottom: 32px;
-        color: rgb(194, 183, 183);
+        color: $textColor;
         font-family: $MainFont;
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 700;
         line-height: 24px;
         letter-spacing: 1px;
         text-align: left;
+        @extend .testBackGround;
     }
 
     &__my-travels {
