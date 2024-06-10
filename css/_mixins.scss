@@ -1,0 +1,19 @@
+@mixin textstyle ($ff, $fz, $fs, $fw, $lh, $c) {
+    font-family: $ff;
+    font-size: $fz;
+    font-style: $fs; // по умолчанию normal
+    font-weight: $fw;
+    line-height: $lh; // по умолчанию normal
+    color: $c;
+}
+
+//    @include textstyle ($Lato, 12px, normal, 400, normal, #fff);
+
+@mixin textStyle ($color, $ffamily, $lspacing, $fsize, $fweight, $lheight) {
+    color: $color;
+    font-family: $ffamily;
+    letter-spacing: $lspacing; // по умолчанию normal
+    font-size: $fsize;
+    font-weight: $fweight;
+    line-height: $lheight; // по умолчанию normal
+}
