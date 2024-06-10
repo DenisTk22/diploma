@@ -36,11 +36,11 @@ altaiTravelsData.forEach(travel => {
         travelLinkEl.href = `${travel.Link}`;
         travelEl.append(travelLinkEl);
 
-            const travelPhotoEl = document.createElement('img');
-            travelPhotoEl.classList.add('altai__travel_photo');
-            travelPhotoEl.src = travel.Photo;
-            travelPhotoEl.setAttribute('alt', `${travel.TravelName}`);
-            travelLinkEl.append(travelPhotoEl);
+        const travelPhotoEl = document.createElement('img');
+        travelPhotoEl.classList.add('altai__travel_photo');
+        travelPhotoEl.src = travel.Photo;
+        travelPhotoEl.setAttribute('alt', `${travel.TravelName}`);
+        travelLinkEl.append(travelPhotoEl);
 
         const shortDescriptionEl = document.createElement('p');
         shortDescriptionEl.classList.add('altai__travel_shortDescription');
